@@ -1,134 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!--<![endif]-->
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="index.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>ScrollMagic Demo - The Basics</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
   <body>
-    <div
-      class="title fullscree d-flex justify-content-center align-items-center flex-column"
-    >
-      <h1>Producing Reliable Data Sets Requires Intense Focus & Cooperation</h1>
-      <h3>
-        ONDRI’s clinical, technical and data specialists use novel approaches to
-        manage and deliver study data
-      </h3>
-    </div>
-    <div class="step1 fullscree d-flex">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+    <div class="y-mandatory">
       <div
-        class="content w-50 d-flex justify-content-center align-items-center flex-column m-4"
+        class="intro d-flex justify-content-center align-items-center flex-column"
       >
-        <div class="stepText">
-          <h2>Quality assurance</h2>
-          <h3>
-            Standards for ONDRI study data are pre-defined & consistent.
-            Includes: instrument calibration, training protocols, data recording
-            & documentation procedures. All study administrators are trained in
-            these procedures.
-          </h3>
+        <div class="align-self-center">
+          <h1 class="bigTitle">
+            Producing Reliable Data Sets Requires<br />
+            Intense Focus & Cooperation
+          </h1>
         </div>
-      </div>
-      <div class="visuals w-50 d-flex justify-content-center align-items-center">
-        <svg
-          x="0px"
-          y="0px"
-          width="444.26px"
-          height="444.6px"
-          viewBox="0 0 444.26 444.6"
-          style="enable-background: new 0 0 444.26 444.6"
-          fill="#0097FF"
-          class="gearAnm"
-          id="gear"
+        <div
+          class="learnMoreButton position-absolute d-flex justify-content-center align-items-center flex-column mb-5"
+          id="learnScroll"
         >
-          <g>
-            <path
-              d="M434.91,288.58l-7.78,19.94c-1.53,3.89-5.59,6.17-9.7,5.44l-29.38-5.15c-5.14,9.87-11.11,19.17-17.83,27.84
-         l16.37,26.67c2.18,3.57,1.55,8.17-1.51,11.02l-15.66,14.57c-3.07,2.85-7.71,3.14-11.1,0.72l-24.29-17.44
-         c-8.82,6.6-18.22,12.41-28.11,17.36l3.19,31.15c0.41,4.17-2.15,8.04-6.14,9.28l-20.44,6.33c-4,1.25-8.3-0.51-10.32-4.17
-         l-14.29-26.19c-10.71,2.1-21.71,3.26-32.88,3.42l-10.64,29.42c-1.43,3.93-5.42,6.32-9.55,5.7l-21.17-3.16
-         c-4.13-0.62-7.25-4.07-7.47-8.24l-1.52-29.83c-10.83-2.8-21.23-6.56-31.11-11.14l-22.35,21.89c-2.98,2.93-7.62,3.34-11.07,0.99
-         l-17.69-12.04c-3.47-2.35-4.79-6.81-3.16-10.65l11.58-27.54c-8.41-7.16-16.16-15.05-23.15-23.56l-29.69,10.04
-         c-3.95,1.33-8.3-0.31-10.41-3.91L26.9,328.81c-2.09-3.62-1.35-8.21,1.78-10.98l22.39-19.76c-4.47-10.03-8.07-20.49-10.7-31.29
-         l-31.05-3.84c-4.15-0.5-7.36-3.86-7.67-8.03l-1.63-21.35c-0.31-4.17,2.35-7.98,6.37-9.11l28.76-8.12
-         c0.2-7.16,3.18-29.13,3.96-32.79l-26.34-16.95c-3.51-2.26-4.96-6.68-3.43-10.57l7.78-19.94c1.53-3.89,5.59-6.17,9.7-5.44
-         l29.38,5.15c5.14-9.87,11.11-19.17,17.83-27.84L57.66,81.27c-2.18-3.57-1.55-8.17,1.51-11.02l15.66-14.57
-         c3.07-2.85,7.71-3.14,11.1-0.72l24.29,17.44c8.82-6.6,18.22-12.41,28.11-17.36l-3.19-31.15c-0.41-4.17,2.15-8.04,6.14-9.28
-         l20.44-6.33c4-1.25,8.3,0.51,10.32,4.17l14.29,26.19c10.71-2.1,21.71-3.26,32.88-3.42l10.64-29.42c1.43-3.93,5.42-6.32,9.55-5.7
-         l21.17,3.16c4.13,0.62,7.25,4.07,7.47,8.24l1.52,29.83c10.83,2.8,21.23,6.56,31.11,11.14l22.35-21.89
-         c2.98-2.93,7.62-3.34,11.07-0.99l17.69,12.04c3.47,2.35,4.79,6.81,3.16,10.65l-11.58,27.54c8.41,7.16,16.16,15.05,23.15,23.56
-         l29.69-10.04c3.95-1.33,8.3,0.31,10.41,3.91l10.72,18.53c2.09,3.62,1.35,8.21-1.78,10.98l-22.39,19.76
-         c4.47,10.03,8.07,20.49,10.7,31.29l31.05,3.84c4.15,0.5,7.36,3.86,7.67,8.03l1.63,21.35c0.31,4.17-2.35,7.98-6.37,9.11l-28.76,8.12
-         c-0.2,7.16-0.86,14.39-1.95,21.66c-0.56,3.75-1.23,7.47-2.02,11.13l26.34,16.95C435,280.27,436.44,284.69,434.91,288.58z"
-            />
-          </g>
-        </svg>
-      </div>
-    </div>
-    <div class="step2 fullscree d-flex">
-      <div
-        class="content w-50 d-flex justify-content-center align-items-center flex-column m-4"
-      >
-        <div class="stepText">
-          <h2>Data collection & upload</h2>
-          <h3>
-            Study participants are assessed. Observations are recorded. Data are
-            scored & entered into Brain-CODE: Ontario Brain Institute’s “big
-            data” neuroinformatics platform.
-          </h3>
+          <h5 class="mb-0">Learn More</h5>
+          <?xml version="1.0" encoding="iso-8859-1"?>
+          <div class="arrow mt-2">
+            <svg
+              version="1.1"
+              id="arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 490.4 490.4"
+              style="enable-background: new 0 0 490.4 490.4"
+              xml:space="preserve"
+            >
+              <g class="arrowStyle">
+                <g>
+                  <path
+                    d="M490.4,245.2C490.4,110,380.4,0,245.2,0S0,110,0,245.2s110,245.2,245.2,245.2S490.4,380.4,490.4,245.2z M24.5,245.2
+			c0-121.7,99-220.7,220.7-220.7s220.7,99,220.7,220.7s-99,220.7-220.7,220.7S24.5,366.9,24.5,245.2z"
+                  />
+                  <path
+                    d="M253.9,360.4l68.9-68.9c4.8-4.8,4.8-12.5,0-17.3s-12.5-4.8-17.3,0l-48,48V138.7c0-6.8-5.5-12.3-12.3-12.3
+			s-12.3,5.5-12.3,12.3v183.4l-48-48c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l68.9,68.9c2.4,2.4,5.5,3.6,8.7,3.6
+			S251.5,362.8,253.9,360.4z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
       </div>
-      <div class="visuals w-50"></div>
-    </div>
-    <div class="step3 fullscree d-flex">
-      <div
-        class="content w-50 d-flex justify-content-center align-items-center flex-column m-4"
-      >
-        <div class="stepText">
-          <h2>Quality control</h2>
-          <h3>
-            Clinical & data experts review the data to ensure adherence to
-            standards. They run outlier analyses & spot checks for
-            irregularities.
-          </h3>
+
+      <div id="project01" class="project p1 d-flex">
+        <div class="w-50 d-flex justify-content-center flex-column px-5">
+          <div id="textColumn" class="textColumn fadeOut">
+            <h3><b>Quality assurance</b></h3>
+            <h4 id="fText" class="mt-3">
+              Standards for ONDRI study data are pre-defined & consistent.
+              Includes: instrument calibration, training protocols, data
+              recording & documentation procedures. All study administrators are
+              trained in these procedures.
+            </h4>
+          </div>
+        </div>
+        <div
+          id="visuals"
+          class="w-50 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="position-relative imageContainer d-flex">
+            <object
+              type="image/svg+xml"
+              data="img/labGuy.svg"
+              alt="labGuy"
+              id="labGuy"
+              class="position-absolute labguy fadeOut"
+            ></object>
+
+            <!-- <div id="gearMain"> -->
+            <object
+              type="image/svg+xml"
+              data="img/gear.svg"
+              id="gearMain"
+              class="gear align-self-center"
+              alt="gear"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/computer.svg"
+              alt="Computer"
+              id="computer"
+              class="position-absolute computer fadeOut"
+            ></object>
+          </div>
         </div>
       </div>
-      <div class="visuals w-50"></div>
-    </div>
-    <div class="step4 fullscree d-flex">
-      <div
-        class="content content w-50 d-flex justify-content-center align-items-center flex-column m-4"
-      >
-        <div class="stepText">
-          <h2>Error detection</h2>
-          <h3>
-            Unusual data that may be errors are returned to clinics for
-            verification.
-          </h3>
+      <div id="project02" class="project p1 d-flex ">
+        <div class="w-50 d-flex justify-content-center flex-column px-5">
+          <div id="textColumn2" class="textColumn fadeOut">
+            <h2><b>Data collection & upload</b></h2>
+            <h4 id="fText2" class="mt-3">
+              Study participants are assessed. Observations are recorded. Data
+              are scored & entered into Brain-CODE: Ontario Brain Institute’s
+              “big data” neuroinformatics platform.
+            </h4>
+          </div>
+        </div>
+        <div
+          id="visuals2"
+          class="w-50 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="position-relative imageContainer d-flex">
+            <object
+              type="image/svg+xml"
+              data="img/server.svg"
+              alt="server"
+              id="server"
+              class="position-absolute server fadeOut"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/tube.svg"
+              alt="tube"
+              id="tube"
+              class="position-absolute tube fadeOut"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/labtalk.svg"
+              alt="labtalk"
+              id="labtalk"
+              class="position-absolute labtalk fadeOut"
+            ></object>
+          </div>
         </div>
       </div>
-      <div class="visuals w-50"></div>
-    </div>
-    <div class="step5 fullscree d-flex">
-      <div
-        class="content content w-50 d-flex justify-content-center align-items-center flex-column m-4"
-      >
-        <div class="stepText">
-          <h2>Data release</h2>
-          <h3>
-            De-identified ONDRI data are shared with researchers world-wide
-            through a controlled release mechanism. Data include dictionaries &
-            other explanatory detail.
-          </h3>
-        </div>
+      <div id="project03" class="project p1 d-flex border">
+
+        <p>zdfsdfsdfsd</p>
       </div>
-      <div class="visuals w-50"></div>
     </div>
-    <div class="footer"></div>
+    <!-- #main-container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
+        );
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
