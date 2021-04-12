@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>ScrollMagic Demo - The Basics</title>
+    <title>ONDRI</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -33,61 +33,144 @@
         your experience.
       </p>
     <![endif]-->
-    <div class="y-mandatory">
+
+    <div id="main" class="y-mandatory">
+      <div id="dataContainer" class="d-flex dataContainer">
+        <div class="position-relative">
+          <object
+            type="image/svg+xml"
+            data="img/data-A.svg"
+            alt="data-A"
+            id="data-A"
+            class="data-A position-absolute"
+          ></object>
+          <object
+            type="image/svg+xml"
+            data="img/data-B.svg"
+            alt="data-B"
+            id="data-B"
+            class="data-B position-absolute"
+          ></object>
+          <object
+            type="image/svg+xml"
+            data="img/data-C.svg"
+            alt="data-C"
+            id="data-C"
+            class="data-C position-absolute"
+          ></object>
+          <object
+            type="image/svg+xml"
+            data="img/data-D.svg"
+            alt="data-D"
+            id="data-D"
+            class="data-D position-absolute"
+          ></object>
+          <object
+            type="image/svg+xml"
+            data="img/data-E.svg"
+            alt="data-E"
+            id="data-E"
+            class="data-E position-absolute"
+          ></object>
+          <object
+            type="image/svg+xml"
+            data="img/data-F.svg"
+            alt="data-F"
+            id="data-F"
+            class="data-F position-absolute"
+          ></object>
+        </div>
+      </div>
       <div
-        class="intro d-flex justify-content-center align-items-center flex-column"
+        class="gearContainer d-flex justify-content-center align-items-center"
       >
-        <div class="align-self-center">
+        <div class="w-50"></div>
+        <div
+          id="gearMain"
+          class="w-50 d-flex justify-content-center align-items-center gearMain"
+        >
+          <object
+            type="image/svg+xml"
+            data="img/gear.svg"
+            class="gear"
+            alt="gear"
+          ></object>
+        </div>
+      </div>
+      <section
+        id="intro"
+        class="intro d-flex justify-content-center align-items-center flex-column p-1"
+      >
+        <div class="h-30"></div>
+        <div
+          class="h-30 d-flex justify-content-center align-items-center flex-column"
+        >
           <h1 class="bigTitle">
             Producing Reliable Data Sets Requires<br />
             Intense Focus & Cooperation
           </h1>
+          <h4 class="subtile mt-3">
+            ONDRI’s clinical, technical and data specialists use novel<br />
+            approaches to manage and deliver study data
+          </h4>
         </div>
         <div
-          class="learnMoreButton position-absolute d-flex justify-content-center align-items-center flex-column mb-5"
-          id="learnScroll"
+          class="h-30 d-flex justify-content-center align-items-center flex-column"
         >
-          <h5 class="mb-0">Learn More</h5>
-          <?xml version="1.0" encoding="iso-8859-1"?>
-          <div class="arrow mt-2">
-            <svg
-              version="1.1"
-              id="arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              x="0px"
-              y="0px"
-              viewBox="0 0 490.4 490.4"
-              style="enable-background: new 0 0 490.4 490.4"
-              xml:space="preserve"
-            >
-              <g class="arrowStyle">
-                <g>
-                  <path
-                    d="M490.4,245.2C490.4,110,380.4,0,245.2,0S0,110,0,245.2s110,245.2,245.2,245.2S490.4,380.4,490.4,245.2z M24.5,245.2
+          <a
+            href="#project01"
+            class="learnMoreButton d-flex justify-content-center align-items-center flex-column mt-5"
+          >
+            <h5 class="mb-0">Learn More</h5>
+            <?xml version="1.0" encoding="iso-8859-1"?>
+            <div class="arrow mt-2">
+              <svg
+                version="1.1"
+                id="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 490.4 490.4"
+                style="enable-background: new 0 0 490.4 490.4"
+                xml:space="preserve"
+              >
+                <g class="arrowStyle">
+                  <g>
+                    <path
+                      d="M490.4,245.2C490.4,110,380.4,0,245.2,0S0,110,0,245.2s110,245.2,245.2,245.2S490.4,380.4,490.4,245.2z M24.5,245.2
 			c0-121.7,99-220.7,220.7-220.7s220.7,99,220.7,220.7s-99,220.7-220.7,220.7S24.5,366.9,24.5,245.2z"
-                  />
-                  <path
-                    d="M253.9,360.4l68.9-68.9c4.8-4.8,4.8-12.5,0-17.3s-12.5-4.8-17.3,0l-48,48V138.7c0-6.8-5.5-12.3-12.3-12.3
+                    />
+                    <path
+                      d="M253.9,360.4l68.9-68.9c4.8-4.8,4.8-12.5,0-17.3s-12.5-4.8-17.3,0l-48,48V138.7c0-6.8-5.5-12.3-12.3-12.3
 			s-12.3,5.5-12.3,12.3v183.4l-48-48c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l68.9,68.9c2.4,2.4,5.5,3.6,8.7,3.6
 			S251.5,362.8,253.9,360.4z"
-                  />
+                    />
+                  </g>
                 </g>
-              </g>
-            </svg>
-          </div>
+              </svg>
+            </div>
+          </a>
         </div>
-      </div>
+      </section>
 
-      <div id="project01" class="project p1 d-flex">
+      <section id="project01" class="project p1 d-flex">
         <div class="w-50 d-flex justify-content-center flex-column px-5">
-          <div id="textColumn" class="textColumn fadeOut">
+          <!-- fadeOut -->
+          <div
+            id="textColumn"
+            class="textColumn fadeOut"
+            data-anim="fadeInLeft"
+          >
             <h3><b>Quality assurance</b></h3>
             <h4 id="fText" class="mt-3">
-              Standards for ONDRI study data are pre-defined & consistent.
-              Includes: instrument calibration, training protocols, data
-              recording & documentation procedures. All study administrators are
-              trained in these procedures.
+              Multiple sites in a clinical study means variations in protocols
+              and processes. ONDRI sets pre-defined, consistent standards for
+              study data collected. This includes standards for: instrument
+              calibration; staff training; data recording and documentation.
+              These rigorous standards are designed to provide researchers
+              accessing these data a high level of comfort about replicability
+              and quality.
             </h4>
           </div>
         </div>
@@ -105,13 +188,7 @@
             ></object>
 
             <!-- <div id="gearMain"> -->
-            <object
-              type="image/svg+xml"
-              data="img/gear.svg"
-              id="gearMain"
-              class="gear align-self-center"
-              alt="gear"
-            ></object>
+
             <object
               type="image/svg+xml"
               data="img/computer.svg"
@@ -121,15 +198,18 @@
             ></object>
           </div>
         </div>
-      </div>
-      <div id="project02" class="project p1 d-flex ">
+      </section>
+      <section id="project02" class="project p1 d-flex">
         <div class="w-50 d-flex justify-content-center flex-column px-5">
           <div id="textColumn2" class="textColumn fadeOut">
             <h2><b>Data collection & upload</b></h2>
             <h4 id="fText2" class="mt-3">
-              Study participants are assessed. Observations are recorded. Data
-              are scored & entered into Brain-CODE: Ontario Brain Institute’s
-              “big data” neuroinformatics platform.
+              Participants are assessed, using validated tools chosen by ONDRI
+              assessment experts. Data are recorded utilizing standards
+              developed through Quality Assurance stage. These data are reviewed
+              in batches by trained personnel and entered into Brain-CODE:
+              Ontario Brain Institute’s “big data” neuroinformatics computer
+              system.
             </h4>
           </div>
         </div>
@@ -161,11 +241,158 @@
             ></object>
           </div>
         </div>
-      </div>
-      <div id="project03" class="project p1 d-flex border">
-
-        <p>zdfsdfsdfsd</p>
-      </div>
+      </section>
+      <section id="project03" class="project p1 d-flex">
+        <div class="w-50 d-flex justify-content-center flex-column px-5">
+          <div id="textColumn3" class="textColumn fadeOut">
+            <h2><b>Quality control</b></h2>
+            <h4 class="mt-3">
+              ONDRI clinical and data experts review the data again, using
+              specially designed models, to ensure they adhere to standards set
+              in Quality Assurance stage. Experts run different types of
+              analyses to highlight data anomalies and spot check for
+              irregularities.
+            </h4>
+          </div>
+        </div>
+        <div
+          id="visuals2"
+          class="w-50 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="position-relative imageContainer d-flex">
+            <object
+              type="image/svg+xml"
+              data="img/dataGraph.svg"
+              alt="dataGraph"
+              id="dataGraph"
+              class="position-absolute dataGraph"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/3-labguy-1.svg"
+              alt="labguy_3_1"
+              id="labguy_3_1"
+              class="position-absolute labguy_3_1"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/3-tube.svg"
+              alt="tube_3"
+              id="tube_3"
+              class="position-absolute tube_3"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/3-computer.svg"
+              alt="computer_3"
+              id="computer_3"
+              class="position-absolute computer_3"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/3-labguy-2.svg"
+              alt="labguy_3_2"
+              id="labguy_3_2"
+              class="position-absolute labguy_3_2"
+            ></object>
+          </div>
+        </div>
+      </section>
+      <section id="project04" class="project p1 d-flex">
+        <div class="w-50 d-flex justify-content-center flex-column px-5">
+          <div id="textColumn4" class="textColumn">
+            <h2><b>Error detection</b></h2>
+            <h4 class="mt-3">
+              Unusual data that may be errors are returned to clinical sites and
+              staff, for verification. Once verified or corrected, data are
+              returned to Brain- CODE.
+            </h4>
+          </div>
+        </div>
+        <div
+          id="visuals2"
+          class="w-50 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="position-relative imageContainer d-flex">
+            <object
+              type="image/svg+xml"
+              data="img/4-data.svg"
+              alt="data_4"
+              id="data_4"
+              class="position-absolute data_4"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/dataGraph.svg"
+              alt="dataGraph_4"
+              id="dataGraph_4"
+              class="position-absolute dataGraph"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/4-tube.svg"
+              alt="tube_4"
+              id="tube_4"
+              class="position-absolute tube_4"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/4-labguy.svg"
+              alt="labguy_4"
+              id="labguy_4"
+              class="position-absolute labguy_4"
+            ></object>
+          </div>
+        </div>
+      </section>
+      <section id="project05" class="project p1 d-flex">
+        <div class="w-50 d-flex justify-content-center flex-column px-5">
+          <div id="textColumn5" class="textColumn">
+            <h2><b>Data release</b></h2>
+            <h4 class="mt-3">
+              ONDRI data are de-identified, using the latest tools and
+              techniques, and are then shared with qualifying researchers
+              world-wide. Data packages include ‘data dictionaries’ and other
+              details providing guidance on how to read and utilize the data.
+            </h4>
+          </div>
+        </div>
+        <div
+          id="visuals2"
+          class="w-50 d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="position-relative imageContainer d-flex">
+            <object
+              type="image/svg+xml"
+              data="img/5-comp1.svg"
+              alt="comp_5_1"
+              id="comp_5_1"
+              class="position-absolute comp_5_1"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/5-comp2.svg"
+              alt="comp_5_2"
+              id="comp_5_2"
+              class="position-absolute comp_5_2"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/5-comp3.svg"
+              alt="comp_5_3"
+              id="comp_5_3"
+              class="position-absolute comp_5_3"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="img/5-center.svg"
+              alt="center_5"
+              id="center_5"
+              class="position-absolute center_5"
+            ></object>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- #main-container -->
 
@@ -178,7 +405,8 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>  -->
+    <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
