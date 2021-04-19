@@ -1,15 +1,8 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
 html {
   font-size: 1em;
   line-height: 1.4;
+  --scale-factor: 0.85;
 }
 
 .y-mandatory {
@@ -42,16 +35,6 @@ a:active {
   color: #2c2a29;
 }
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
 hr {
   display: block;
   height: 1px;
@@ -59,13 +42,6 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
-}
-
-audio,
-canvas,
-img,
-video {
-  vertical-align: middle;
 }
 
 fieldset {
@@ -150,6 +126,24 @@ body {
   margin: 0 auto;
   color: #294d67;
 }
+#textColumn {
+  z-index: 6;
+  padding-bottom: 25vh;
+}
+
+.playButtonImg {
+  width: 50px;
+}
+.playButton {
+  z-index: 6;
+  width: 55px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.playButton:hover svg {
+  fill: rgb(128, 128, 128);
+}
 
 .imageContainer {
   width: 33vw;
@@ -200,112 +194,112 @@ body {
 }
 
 .labguy {
-  width: 19vw;
-  left: -23%;
-  top: -27%;
+  width: calc(19vw * var(--scale-factor));
+  left: -9%;
+  top: -20%;
   opacity: 0;
 }
 .computer {
-  width: 15vw;
-  left: 26%;
-  top: 34%;
+  width: calc(15vw * var(--scale-factor));
+  left: 30%;
+  top: 36%;
   opacity: 0;
   z-index: 3;
 }
 .server {
-  width: 11vw;
-  left: 32%;
-  top: 28%;
+  width: calc(11vw * var(--scale-factor));
+  left: 34%;
+  top: 32%;
   z-index: 3;
 }
 
 .tube {
-  width: 15vw;
-  left: -17%;
-  top: -27%;
+  width: calc(15vw * var(--scale-factor));
+  left: -6%;
+  top: -15%;
   z-index: 3;
 }
 
 .labtalk {
-  width: 20vw;
-  left: 15%;
-  top: -40%;
+  width: calc(20vw * var(--scale-factor));
+  left: 20%;
+  top: -26%;
   z-index: 0;
 }
 .dataGraph {
-  width: 13vw;
-  left: 30%;
-  top: 28%;
+  width: calc(13vw * var(--scale-factor));
+  left: 33%;
+  top: 33%;
   z-index: 3;
 }
 .tube_3 {
-  width: 13vw;
-  left: 44%;
-  top: -23%;
+  width: calc(13vw * var(--scale-factor));
+  left: 43%;
+  top: -16%;
   z-index: 3;
 }
 .computer_3 {
-  width: 13vw;
-  left: 9%;
-  top: -27%;
+  width: calc(12.5vw * var(--scale-factor));
+  left: 14%;
+  top: -20%;
   z-index: 0;
 }
 .labguy_3_1 {
-  width: 8vw;
-  left: -15%;
-  top: -22%;
-  z-index: 0;
+  width: calc(10vw * var(--scale-factor));
+  left: -11%;
+  top: -15%;
+  z-index: 5;
 }
 .labguy_3_2 {
-  width: 6vw;
-  left: 20%;
-  top: -19%;
+  width: calc(6vw * var(--scale-factor));
+  left: 21%;
+  top: -14%;
   z-index: 0;
 }
 .tube_4 {
-  width: 27vw;
-  left: -1%;
-  top: -30%;
+  width: calc(27vw * var(--scale-factor));
+  left: 8%;
+  top: -17%;
   z-index: 3;
 }
 .labguy_4 {
-  width: 6vw;
-  left: 10%;
-  top: -39%;
+  width: calc(6vw * var(--scale-factor));
+  left: 17%;
+  top: -24%;
   z-index: 3;
 }
 .data_4 {
-  width: 9vw;
-  left: 21%;
-  top: -38%;
+  width: calc(9vw * var(--scale-factor));
+  left: 24%;
+  top: -24%;
   z-index: 3;
 }
 
-.comp_5_1{
-  width: 13vw;
-  left: -18%;
-  top: -38%;
+.comp_5_1 {
+  width: calc(13vw * var(--scale-factor));
+  left: -10%;
+  top: -24%;
   z-index: 3;
 }
 
-.comp_5_2{
-  width: 13vw;
+.comp_5_2 {
+  width: calc(13vw * var(--scale-factor));
   left: 30%;
-  top: -29%;
-  z-index: 3;
-}
-
-.comp_5_3{
-  width: 13vw;
-  left: 79%;
   top: -21%;
   z-index: 3;
 }
 
-.center_5{
-  width: 18vw;
-  left: 22.5%;
-  top: 24%;
+.comp_5_3 {
+  width: calc(13vw * var(--scale-factor));
+  left: 70%;
+  top: -18%;
+  z-index: 3;
+}
+
+.center_5 {
+  width: calc(15vw * var(--scale-factor));
+  left: 30%;
+  top: 31%;
   z-index: 3;
 }
 
@@ -337,7 +331,7 @@ body {
   fill: #006ab1;
 }
 .gear {
-  width: 33vw;
+  width: calc(33vw * var(--scale-factor));
   animation-name: ckw;
   animation-duration: 60s;
   animation-iteration-count: infinite;
@@ -379,20 +373,22 @@ body {
 }
 @-webkit-keyframes moveToLeft {
   0% {
-    transform: translateX(0);
-    opacity: 1;
+    transform: translate(0);
+   
   }
   100% {
-    transform: translateX(-25vw);
-    opacity: 0;
+    transform: translate(-25vw, 5vh);
+   
   }
 }
 @keyframes moveToLeft {
   0% {
-    transform: translateX(0);
+    transform: translate(0);
+   
   }
   100% {
-    transform: translateX(-25vw);
+    transform: translate(-25vw, 5vh);
+   
   }
 }
 
@@ -408,18 +404,18 @@ body {
 }
 @-webkit-keyframes moveToRight {
   0% {
-    transform: translateX(-25vw);
+    transform: translate(-25vw, 5vh);
   }
   100% {
-    transform: translateX(0);
+    transform: translate(0);
   }
 }
 @keyframes moveToRight {
   0% {
-    transform: translateX(-25vw);
+    transform: translate(-25vw, 5vh);
   }
   100% {
-    transform: translateX(0);
+    transform: translate(0);
   }
 }
 
@@ -607,6 +603,75 @@ body {
     transform: none;
   }
 }
+
+.fadeInDownB {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 0.4s;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDownC {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 0.8s;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
 
 /* ==========================================================================
    Media Queries

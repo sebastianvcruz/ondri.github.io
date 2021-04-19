@@ -26,14 +26,6 @@
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
-
     <div id="main" class="y-mandatory">
       <div id="dataContainer" class="d-flex dataContainer">
         <div class="position-relative">
@@ -156,22 +148,50 @@
 
       <section id="project01" class="project p1 d-flex">
         <div class="w-50 d-flex justify-content-center flex-column px-5">
-          <!-- fadeOut -->
           <div
             id="textColumn"
-            class="textColumn fadeOut"
+            class="textColumn fadeOut d-flex align-items-start"
             data-anim="fadeInLeft"
           >
-            <h3><b>Quality assurance</b></h3>
-            <h4 id="fText" class="mt-3">
-              Multiple sites in a clinical study means variations in protocols
-              and processes. ONDRI sets pre-defined, consistent standards for
-              study data collected. This includes standards for: instrument
-              calibration; staff training; data recording and documentation.
-              These rigorous standards are designed to provide researchers
-              accessing these data a high level of comfort about replicability
-              and quality.
-            </h4>
+            <img class="mr-4" src="img/numOne.svg" width="35px" />
+            <div>
+              <h3><b>Quality assurance</b></h3>
+              <h4 id="fText" class="mt-3 mb-4">
+                Multiple sites in a clinical study means variations in protocols
+                and processes. ONDRI sets pre-defined, consistent standards for
+                study data collected. This includes standards for: instrument
+                calibration; staff training; data recording and documentation.
+                These rigorous standards are designed to provide researchers
+                accessing these data a high level of comfort about replicability
+                and quality.
+              </h4>
+              <button type="button" class="playButton" onclick="playAudio()">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 30.051 30.051"
+                  class="playButtonImg"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M19.982,14.438l-6.24-4.536c-0.229-0.166-0.533-0.191-0.784-0.062c-0.253,0.128-0.411,0.388-0.411,0.669v9.069
+        c0,0.284,0.158,0.543,0.411,0.671c0.107,0.054,0.224,0.081,0.342,0.081c0.154,0,0.31-0.049,0.442-0.146l6.24-4.532
+        c0.197-0.145,0.312-0.369,0.312-0.607C20.295,14.803,20.177,14.58,19.982,14.438z"
+                    />
+                    <path
+                      d="M15.026,0.002C6.726,0.002,0,6.728,0,15.028c0,8.297,6.726,15.021,15.026,15.021c8.298,0,15.025-6.725,15.025-15.021
+        C30.052,6.728,23.324,0.002,15.026,0.002z M15.026,27.542c-6.912,0-12.516-5.601-12.516-12.514c0-6.91,5.604-12.518,12.516-12.518
+        c6.911,0,12.514,5.607,12.514,12.518C27.541,21.941,21.937,27.542,15.026,27.542z"
+                    />
+                  </g>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         <div
@@ -186,9 +206,6 @@
               id="labGuy"
               class="position-absolute labguy fadeOut"
             ></object>
-
-            <!-- <div id="gearMain"> -->
-
             <object
               type="image/svg+xml"
               data="img/computer.svg"
@@ -201,16 +218,23 @@
       </section>
       <section id="project02" class="project p1 d-flex">
         <div class="w-50 d-flex justify-content-center flex-column px-5">
-          <div id="textColumn2" class="textColumn fadeOut">
-            <h2><b>Data collection & upload</b></h2>
-            <h4 id="fText2" class="mt-3">
-              Participants are assessed, using validated tools chosen by ONDRI
-              assessment experts. Data are recorded utilizing standards
-              developed through Quality Assurance stage. These data are reviewed
-              in batches by trained personnel and entered into Brain-CODE:
-              Ontario Brain Institute’s “big data” neuroinformatics computer
-              system.
-            </h4>
+          <div
+            id="textColumn2"
+            class="textColumn fadeOut d-flex align-items-start"
+            data-anim="fadeInLeft"
+          >
+            <img class="mr-4" src="img/numTwo.svg" width="35px" />
+            <div>
+              <h2><b>Data collection & upload</b></h2>
+              <h4 id="fText2" class="mt-3">
+                Participants are assessed, using validated tools chosen by ONDRI
+                assessment experts. Data are recorded utilizing standards
+                developed through Quality Assurance stage. These data are
+                reviewed in batches by trained personnel and entered into
+                Brain-CODE: Ontario Brain Institute’s “big data”
+                neuroinformatics computer system.
+              </h4>
+            </div>
           </div>
         </div>
         <div
@@ -244,15 +268,22 @@
       </section>
       <section id="project03" class="project p1 d-flex">
         <div class="w-50 d-flex justify-content-center flex-column px-5">
-          <div id="textColumn3" class="textColumn fadeOut">
-            <h2><b>Quality control</b></h2>
-            <h4 class="mt-3">
-              ONDRI clinical and data experts review the data again, using
-              specially designed models, to ensure they adhere to standards set
-              in Quality Assurance stage. Experts run different types of
-              analyses to highlight data anomalies and spot check for
-              irregularities.
-            </h4>
+          <div
+            id="textColumn3"
+            class="textColumn fadeOut d-flex align-items-start"
+            data-anim="fadeInLeft"
+          >
+            <img class="mr-4" src="img/numThree.svg" width="35px" />
+            <div>
+              <h2><b>Quality control</b></h2>
+              <h4 class="mt-3">
+                ONDRI clinical and data experts review the data again, using
+                specially designed models, to ensure they adhere to standards
+                set in Quality Assurance stage. Experts run different types of
+                analyses to highlight data anomalies and spot check for
+                irregularities.
+              </h4>
+            </div>
           </div>
         </div>
         <div
@@ -265,48 +296,55 @@
               data="img/dataGraph.svg"
               alt="dataGraph"
               id="dataGraph"
-              class="position-absolute dataGraph"
+              class="position-absolute dataGraph fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/3-labguy-1.svg"
               alt="labguy_3_1"
               id="labguy_3_1"
-              class="position-absolute labguy_3_1"
+              class="position-absolute labguy_3_1 fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/3-tube.svg"
               alt="tube_3"
               id="tube_3"
-              class="position-absolute tube_3"
+              class="position-absolute tube_3 fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/3-computer.svg"
               alt="computer_3"
               id="computer_3"
-              class="position-absolute computer_3"
+              class="position-absolute computer_3 fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/3-labguy-2.svg"
               alt="labguy_3_2"
               id="labguy_3_2"
-              class="position-absolute labguy_3_2"
+              class="position-absolute labguy_3_2 fadeOut"
             ></object>
           </div>
         </div>
       </section>
       <section id="project04" class="project p1 d-flex">
         <div class="w-50 d-flex justify-content-center flex-column px-5">
-          <div id="textColumn4" class="textColumn">
-            <h2><b>Error detection</b></h2>
-            <h4 class="mt-3">
-              Unusual data that may be errors are returned to clinical sites and
-              staff, for verification. Once verified or corrected, data are
-              returned to Brain- CODE.
-            </h4>
+          <div
+            id="textColumn4"
+            class="textColumn fadeOut d-flex align-items-start"
+            data-anim="fadeInLeft"
+          >
+            <img class="mr-4" src="img/numFour.svg" width="35px" />
+            <div>
+              <h2><b>Error detection</b></h2>
+              <h4 class="mt-3">
+                Unusual data that may be errors are returned to clinical sites
+                and staff, for verification. Once verified or corrected, data
+                are returned to Brain- CODE.
+              </h4>
+            </div>
           </div>
         </div>
         <div
@@ -319,42 +357,49 @@
               data="img/4-data.svg"
               alt="data_4"
               id="data_4"
-              class="position-absolute data_4"
+              class="position-absolute data_4 fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/dataGraph.svg"
               alt="dataGraph_4"
               id="dataGraph_4"
-              class="position-absolute dataGraph"
+              class="position-absolute dataGraph fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/4-tube.svg"
               alt="tube_4"
               id="tube_4"
-              class="position-absolute tube_4"
+              class="position-absolute tube_4 fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/4-labguy.svg"
               alt="labguy_4"
               id="labguy_4"
-              class="position-absolute labguy_4"
+              class="position-absolute labguy_4 fadeOut"
             ></object>
           </div>
         </div>
       </section>
       <section id="project05" class="project p1 d-flex">
         <div class="w-50 d-flex justify-content-center flex-column px-5">
-          <div id="textColumn5" class="textColumn">
-            <h2><b>Data release</b></h2>
-            <h4 class="mt-3">
-              ONDRI data are de-identified, using the latest tools and
-              techniques, and are then shared with qualifying researchers
-              world-wide. Data packages include ‘data dictionaries’ and other
-              details providing guidance on how to read and utilize the data.
-            </h4>
+          <div
+            id="textColumn5"
+            class="textColumn fadeOut d-flex align-items-start"
+            data-anim="fadeInLeft"
+          >
+            <img class="mr-4" src="img/numFive.svg" width="35px" />
+            <div>
+              <h2><b>Data release</b></h2>
+              <h4 class="mt-3">
+                ONDRI data are de-identified, using the latest tools and
+                techniques, and are then shared with qualifying researchers
+                world-wide. Data packages include ‘data dictionaries’ and other
+                details providing guidance on how to read and utilize the data.
+              </h4>
+            </div>
           </div>
         </div>
         <div
@@ -367,28 +412,28 @@
               data="img/5-comp1.svg"
               alt="comp_5_1"
               id="comp_5_1"
-              class="position-absolute comp_5_1"
+              class="position-absolute comp_5_1 fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/5-comp2.svg"
               alt="comp_5_2"
               id="comp_5_2"
-              class="position-absolute comp_5_2"
+              class="position-absolute comp_5_2 fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/5-comp3.svg"
               alt="comp_5_3"
               id="comp_5_3"
-              class="position-absolute comp_5_3"
+              class="position-absolute comp_5_3 fadeOut"
             ></object>
             <object
               type="image/svg+xml"
               data="img/5-center.svg"
               alt="center_5"
               id="center_5"
-              class="position-absolute center_5"
+              class="position-absolute center_5 fadeOut"
             ></object>
           </div>
         </div>
@@ -404,8 +449,7 @@
         );
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
     <script src="https://bundle.run/css-scroll-snap-polyfill@0.1.2"></script>
     <script src="js/main.js"></script>
   </body>
