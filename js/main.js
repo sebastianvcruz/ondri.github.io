@@ -14,6 +14,7 @@ $(document).ready(function () {
   const visuals = document.getElementById("visuals");
   const texto1 = document.getElementById("textColumn");
   const labGuy = document.getElementById("labGuy");
+  const outlet = document.getElementById("outlet");
   const computer = document.getElementById("computer");
 
   const texto2 = document.getElementById("textColumn2");
@@ -30,7 +31,6 @@ $(document).ready(function () {
 
   const texto4 = document.getElementById("textColumn4");
   const tube_4 = document.getElementById("tube_4");
-  const data_4 = document.getElementById("data_4");
   const dataGraph_4 = document.getElementById("dataGraph_4");
   const labguy_4 = document.getElementById("labguy_4");
 
@@ -40,10 +40,44 @@ $(document).ready(function () {
   const comp_5_3 = document.getElementById("comp_5_3");
   const center_5 = document.getElementById("center_5");
 
+  const playButton =  document.getElementById("playButton");
+ 
+  
+  const pauseButton =  document.getElementById("pauseButton");
+  console.log("🚀 ~ file: main.js ~ line 47 ~ pauseButton", pauseButton)
+  
+
+  let playing1 = false;
+  const sound1 = new Howl({
+    src: ["../audio/Panel_1.mp3"],
+    onplay: function () {
+      playing1 = true;
+      playButton.classList.add("invisible");
+       pauseButton.classList.remove("invisible");
+    },
+    onpause: function () {
+      playing1 = false;
+      pauseButton.classList.add("invisible");
+      playButton.classList.remove("invisible");
+    },
+    onend: function () {
+      playing1 = false;
+      pauseButton.classList.add("invisible");
+      playButton.classList.remove("invisible");
+    }
+  });
+  playAudio = () => {
+    playing1 ? sound1.pause() : sound1.play();
+  };
+
+  soundControl =()=>{
+     sound1.stop()
+  }
+
   // const animateList = document.querySelectorAll("#project01 ");
   const options = {
     rootMargin: "0px",
-    threshold: 0.4
+    threshold: 0.45
   };
   observer = new IntersectionObserver((elms) => {
     // let startLoad = true;
@@ -55,6 +89,10 @@ $(document).ready(function () {
           gear.classList.remove("fadeIn");
           gear.classList.remove("fadeOut");
           dataA.classList.remove("fadeOut");
+          // playing1 ? sound1.stop() : null
+          // playing1=false
+          // pauseButton.classList.add("invisible");
+          // playButton.classList.remove("invisible");
         } else {
           dataContainer.classList.add("moveToLeft");
           dataContainer.classList.remove("moveToRight");
@@ -67,16 +105,18 @@ $(document).ready(function () {
 
           texto1.classList.add("fadeInLeft");
           labGuy.classList.add("fadeInRight");
+          outlet.classList.add("fadeInLeft");
           computer.classList.add("fadeInUp");
           gear.classList.add("fadeIn");
           visuals.style.backgroundColor = "#F0F2F4";
         } else {
           dataB.classList.remove("fadeIn");
-          dataB.classList.add("fadeOut"); 
+          dataB.classList.add("fadeOut");
 
           texto1.classList.remove("fadeInLeft");
           texto2.classList.remove("fadeInLeft");
           labGuy.classList.remove("fadeInRight");
+          outlet.classList.remove("fadeInLeft");
           computer.classList.remove("fadeInUp");
         }
         if (entry.target.id === "project02") {
@@ -129,7 +169,6 @@ $(document).ready(function () {
 
           texto4.classList.add("fadeInLeft");
           tube_4.classList.add("fadeInRight");
-          data_4.classList.add("fadeIn");
           dataGraph_4.classList.add("fadeIn");
           labguy_4.classList.add("fadeInLeft");
         } else {
@@ -138,7 +177,6 @@ $(document).ready(function () {
 
           texto4.classList.remove("fadeInLeft");
           tube_4.classList.remove("fadeInRight");
-          data_4.classList.remove("fadeIn");
           dataGraph_4.classList.remove("fadeIn");
           labguy_4.classList.remove("fadeInLeft");
         }
@@ -170,144 +208,6 @@ $(document).ready(function () {
   animateList.forEach((elms) => {
     observer.observe(elms);
   });
-
-  // Init ScrollMagic
-  // var controller = new ScrollMagic.Controller();
-
-  // var pinIntroScene2 = new ScrollMagic.Scene({
-  //   triggerElement: "#fText",
-  //   //vertical position from 0 to 1
-  //   triggerHook: 0.45
-  // })
-  //   .setPin("#gearMain")
-  //   .addTo(controller);
-
-  // var SceneLabGuy = new ScrollMagic.Scene({
-  //   triggerElement: "#fText",
-  //   duration: "47%",
-  //   triggerHook: 0.9
-  // })
-  //   .setClassToggle("#labGuy", "fadeInRight") // add class to project01
-  //   .addTo(controller);
-
-  // var SceneComputer = new ScrollMagic.Scene({
-  //   triggerElement: "#fText",
-  //   duration: "47%",
-  //   triggerHook: 0.9
-  // })
-  //   // .addIndicators()
-  //   .setClassToggle("#computer", "fadeInUp") // add class to project01
-  //   .addTo(controller);
-
-  // var SceneText1 = new ScrollMagic.Scene({
-  //   triggerElement: "#fText",
-  //   triggerHook: 0.9,
-  //   duration: "55%"
-  // })
-  //   .setClassToggle("#textColumn", "fadeInLeft") // add class to project01
-  //   .addTo(controller);
-
-  // var animateElem = document.getElementById("visuals");
-  // var SceneVisuals = new ScrollMagic.Scene({
-  //   triggerElement: ".project",
-  //   triggerHook: 0.5
-  // })
-  //   .on("enter", function () {
-  //     // trigger animation by changing inline style.
-  //     animateElem.style.backgroundColor = "#F0F2F4";
-  //   })
-  //   .on("leave", function () {
-  //     // reset style
-  //     animateElem.style.backgroundColor = "#fff";
-  //   }) // add indicators (requires plugin)
-  //   .addTo(controller);
-
-  // var SceneText2 = new ScrollMagic.Scene({
-  //   triggerElement: "#fText2",
-  //   triggerHook: 0.9,
-  //   duration: "55%"
-  // })
-  //   .setClassToggle("#textColumn2", "fadeInLeft") // add class to project01
-  //   .addTo(controller);
-
-  // var SceneTube = new ScrollMagic.Scene({
-  //   triggerElement: "#fText2",
-  //   duration: "47%",
-  //   triggerHook: 0.9
-  // })
-
-  //   .setClassToggle("#tube", "fadeInDown") // add class to project01
-  //   .addTo(controller);
-
-  // var SceneServer = new ScrollMagic.Scene({
-  //   triggerElement: "#fText2",
-  //   duration: "47%",
-  //   triggerHook: 0.9
-  // })
-
-  //   .setClassToggle("#server", "fadeIn") // add class to project01
-  //   .addTo(controller);
-
-  // var SceneLabtalk = new ScrollMagic.Scene({
-  //   triggerElement: "#fText2",
-  //   duration: "47%",
-  //   triggerHook: 0.9
-  // })
-
-  // $("#learnScroll").click(function () {
-  //   document.getElementById("main").classList.remove('y-mandatory');
-  //   // $("#main").removeClass("y-mandatory");
-  //   console.log("object");
-  //   $("html,body,#main")
-  //     .animate(
-  //       {
-  //         scrollTop: $("#project01").offset().top
-  //       },
-  //       100
-  //     )
-  //     .promise()
-  //     .then(() => {
-  //       setTimeout(function () {
-  //         document.getElementById("main").classList.add('y-mandatory');
-  //         // $("#main").addClass("y-mandatory");
-  //       }, 1000);
-
-  //       // $("#main").addClass("y-mandatory")
-  //     });
-  // });
-
-  // .setClassToggle("#labtalk", "fadeInRight") // add class to project01
-  // .addTo(controller);
-  //   $("#learnScroll").click(function () {
-
-  //     $("html, body").animate(
-  //       {
-  //         scrollTop: $("#project01").offset().top
-  //       },
-  //       100
-  //     );
-  //   });
-  let playing = false;
-  const sound = new Howl({
-    src: ["../audio/01_quality_assurance.wav"],
-    onplay: function () {
-      playing = true;
-      console.log("PLAYING?", sound.pos());
-    },
-    onpause: function () {
-      playing = false;
-    },
-    onend: function () {
-      console.log("END");
-      playing = false;
-      sound.stop();
-    }
-  });
-  playAudio = () => {
-    playing ? sound.pause() : sound.play();
-
-    // sound.play();
-  };
   //
   cssScrollSnapPolyfill();
 
