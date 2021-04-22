@@ -2,6 +2,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
   --scale-factor: 0.85;
+  --scale-factor2: 0.70;
 }
 
 .y-mandatory {
@@ -629,16 +630,128 @@ a:active {
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-  /* =General */
 
-  /* =Header */
-
-  /* =Footer */
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-height: 810px) {
   /* =General */
+  .dataContainer {
+    width: 70px;
+    top: 78%;
+    left: 51.8%;
+  }
+  .data-A {
+    width: 70px;
+  }
+  .data-B {
+    width: 70px;
+  }
+  .data-C {
+    width: 70px;
+  }
+  .data-D {
+    width: 70px;
+  }
+  .data-E {
+    width: 70px;
+  }
+  .data-F {
+    width: 70px;
+  }
 
+.gear {
+    width: calc(33vw * var(--scale-factor2));
+  }
+.labguy {
+    width: calc(17vw * var(--scale-factor2));
+    left: 2%;
+    top: -7%;
+}
+.outlet{
+  width: calc(6.5vw * var(--scale-factor2));
+  left: -10%;
+    top: -9%;
+}
+.computer {
+  width: calc(15vw * var(--scale-factor2));
+  left: 34%;
+  top: 38%;
+}
+.server {
+  width: calc(9vw * var(--scale-factor2));
+  left: 39%;
+  top: 37%;
+}
+.tube {
+  width: calc(15vw * var(--scale-factor2));
+  left: 3%;
+  top: -2%;
+}
+.labtalk {
+  width: calc(30vw * var(--scale-factor2));
+  left: 5%;
+  top: -12%;
+}
+
+.dataGraph {
+  width: calc(13vw * var(--scale-factor2));
+  left: 35%;
+  top: 35%;
+}
+.tube_3 {
+  width: calc(13vw * var(--scale-factor2));
+  left: 45%;
+  top: -3%;
+}
+.computer_3 {
+  width: calc(12.5vw * var(--scale-factor2));
+  left: 21%;
+  top: -7%;
+}
+.labguy_3_1 {
+  width: calc(10vw * var(--scale-factor2));
+  left: 0%;
+  top: -3%;
+}
+.labguy_3_2 {
+  width: calc(6vw * var(--scale-factor2));
+  left: 26%;
+  top: -2%;
+}
+.tube_4 {
+  width: calc(27vw * var(--scale-factor2));
+  left: 15%;
+  top: -4%;
+}
+.labguy_4 {
+  width: calc(11vw * var(--scale-factor2));
+  left: 22%;
+  top: -11%;
+}
+
+.comp_5_1 {
+  width: calc(13vw * var(--scale-factor2));
+  left: -2%;
+  top: -10%;
+}
+
+.comp_5_2 {
+  width: calc(13vw * var(--scale-factor2));
+  left: 33%;
+  top: -8%;
+}
+
+.comp_5_3 {
+  width: calc(13vw * var(--scale-factor2));
+  left: 68%;
+  top: -6%;
+}
+
+.center_5 {
+  width: calc(15vw * var(--scale-factor2));
+  left: 34%;
+  top: 34%;
+}
   /* =Header */
 
   /* =Footer */

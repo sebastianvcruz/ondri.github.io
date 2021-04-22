@@ -39,13 +39,8 @@ $(document).ready(function () {
   const comp_5_2 = document.getElementById("comp_5_2");
   const comp_5_3 = document.getElementById("comp_5_3");
   const center_5 = document.getElementById("center_5");
-
   const playButton =  document.getElementById("playButton");
- 
-  
   const pauseButton =  document.getElementById("pauseButton");
-  console.log("🚀 ~ file: main.js ~ line 47 ~ pauseButton", pauseButton)
-  
 
   let playing1 = false;
   const sound1 = new Howl({
@@ -210,6 +205,4 @@ $(document).ready(function () {
   });
   //
   cssScrollSnapPolyfill();
-
-  console.log("LOADED");
 });
