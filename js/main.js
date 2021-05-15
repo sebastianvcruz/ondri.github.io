@@ -1,7 +1,11 @@
 $(document).ready(function () {
   const animateList = [...document.querySelectorAll("section")];
 
-  const gear = document.getElementById("gearMain");
+  const gear1 = document.getElementById("gearMain1");
+  const gear2 = document.getElementById("gearMain2");
+  const gear3= document.getElementById("gearMain3");
+  const gear4= document.getElementById("gearMain4");
+  const gear5= document.getElementById("gearMain5");
 
   const dataContainer = document.getElementById("dataContainer");
   const dataA = document.getElementById("data-A");
@@ -255,7 +259,7 @@ $(document).ready(function () {
   // const animateList = document.querySelectorAll("#project01 ");
   const options = {
     rootMargin: '0px',
-    threshold: 0.7
+    threshold: 0.1
   };
   observer = new IntersectionObserver((elms) => {
     // let startLoad = true;
@@ -264,8 +268,6 @@ $(document).ready(function () {
         if (entry.target.id === "intro") {
           dataContainer.classList.add("moveToRight");
           dataContainer.classList.remove("moveToLeft");
-          gear.classList.remove("fadeIn");
-          gear.classList.remove("fadeOut");
           dataA.classList.remove("fadeOut");
         } else {
           dataContainer.classList.add("moveToLeft");
@@ -276,12 +278,13 @@ $(document).ready(function () {
           dataA.classList.remove("fadeIn");
           dataB.classList.add("fadeIn");
           dataB.classList.remove("fadeOut");
+          gear1.classList.add("fadeIn");
 
           texto1.classList.add("fadeInLeft");
           labGuy.classList.add("fadeInRight");
           outlet.classList.add("fadeInLeft");
           computer.classList.add("fadeInUp");
-          gear.classList.add("fadeIn");
+
           visuals.style.backgroundColor = "#F0F2F4";
         } else {
           dataB.classList.remove("fadeIn");
@@ -292,6 +295,7 @@ $(document).ready(function () {
           labGuy.classList.remove("fadeInRight");
           outlet.classList.remove("fadeInLeft");
           computer.classList.remove("fadeInUp");
+          gear1.classList.remove("fadeIn");
           sound1Stop();
         }
         if (entry.target.id === "project02") {
@@ -299,12 +303,12 @@ $(document).ready(function () {
           dataB.classList.remove("fadeIn");
           dataC.classList.add("fadeIn");
           dataC.classList.remove("fadeOut");
+          gear2.classList.add("fadeIn");
 
           texto2.classList.add("fadeInLeft");
           server.classList.add("fadeIn");
           tube.classList.add("fadeInDown");
           labtalk.classList.add("fadeInRight");
-          gear.classList.add("fadeIn");
         } else {
           dataC.classList.remove("fadeIn");
           dataC.classList.add("fadeOut");
@@ -313,6 +317,7 @@ $(document).ready(function () {
           server.classList.remove("fadeIn");
           tube.classList.remove("fadeInDown");
           labtalk.classList.remove("fadeInRight");
+          gear2.classList.remove("fadeIn");
           sound2Stop();
         }
         if (entry.target.id === "project03") {
@@ -320,6 +325,7 @@ $(document).ready(function () {
           dataC.classList.remove("fadeIn");
           dataD.classList.add("fadeIn");
           dataD.classList.remove("fadeOut");
+          gear3.classList.add("fadeIn");
 
           texto3.classList.add("fadeInLeft");
           dataGraph.classList.add("fadeIn");
@@ -338,6 +344,7 @@ $(document).ready(function () {
           computer_3.classList.remove("fadeInRight");
           labguy_3_1.classList.remove("fadeInUp");
           labguy_3_2.classList.remove("fadeInDown");
+          gear3.classList.remove("fadeIn");
           sound3Stop();
         }
         if (entry.target.id === "project04") {
@@ -350,7 +357,7 @@ $(document).ready(function () {
           tube_4.classList.add("fadeInRight");
           dataGraph_4.classList.add("fadeIn");
           labguy_4.classList.add("fadeInLeft");
-          gear.classList.add("fadeIn");
+          gear4.classList.add("fadeIn");
         } else {
           dataE.classList.remove("fadeIn");
           dataE.classList.add("fadeOut");
@@ -359,6 +366,7 @@ $(document).ready(function () {
           tube_4.classList.remove("fadeInRight");
           dataGraph_4.classList.remove("fadeIn");
           labguy_4.classList.remove("fadeInLeft");
+          gear4.classList.remove("fadeIn");
           sound4Stop();
         }
         if (entry.target.id === "project05") {
@@ -372,7 +380,7 @@ $(document).ready(function () {
           comp_5_2.classList.add("fadeInDownB");
           comp_5_3.classList.add("fadeInDownC");
           center_5.classList.add("fadeInRight");
-          gear.classList.add("fadeIn");
+          gear5.classList.add("fadeIn");
         } else {
           dataF.classList.remove("fadeIn");
           dataF.classList.add("fadeOut");
@@ -382,6 +390,7 @@ $(document).ready(function () {
           comp_5_2.classList.remove("fadeInDownB");
           comp_5_3.classList.remove("fadeInDownC");
           center_5.classList.remove("fadeInRight");
+          gear5.classList.remove("fadeIn");
           sound5Stop();
         }
       }
@@ -394,4 +403,10 @@ $(document).ready(function () {
 
   //
   cssScrollSnapPolyfill();
+  // <iframe width="100%" id="iframeInfograph" src="https://hardcore-blackwell-15e57b.netlify.app/" title="infograf" frameborder="0" style="overflow: hidden" allowfullscreen></iframe>
+//<script language="javascript" type="text/javascript">
+// const iframe = document.getElementById("iframeInfograph")
+// let vphSize= window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+// iframe.height = vphSize*0.75
+//  </script>
 });
