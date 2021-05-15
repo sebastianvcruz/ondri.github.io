@@ -39,10 +39,18 @@ $(document).ready(function () {
   const labguy_4 = document.getElementById("labguy_4");
 
   const texto5 = document.getElementById("textColumn5");
+  const tube_5 = document.getElementById("tube_5");
+  const arrows_5 = document.getElementById("arrows_5");
+  const marbles_orange = document.getElementById("marbles_orange")
   const comp_5_1 = document.getElementById("comp_5_1");
   const comp_5_2 = document.getElementById("comp_5_2");
   const comp_5_3 = document.getElementById("comp_5_3");
   const center_5 = document.getElementById("center_5");
+
+  const playButtonIntro = document.getElementById("playButtonIntro");
+  const pauseButtonIntro = document.getElementById("pauseButtonIntro");
+  const audioGraphNoPlayIntro=document.getElementById("audioGraphNoPlayIntro");
+  const audioGraphPlayIntro=document.getElementById("playAnimationIntro");
 
   const playButton = document.getElementById("playButton");
   const pauseButton = document.getElementById("pauseButton");
@@ -69,6 +77,43 @@ $(document).ready(function () {
   const pauseButton5 = document.getElementById("pauseButton5");
   const audioGraphNoPlay5=document.getElementById("audioGraphNoPlay5");
   const audioGraphPlay5=document.getElementById("playAnimation5");
+
+  let playing0 = false;
+  const sound0 = new Howl({
+    src: ["../audio/Panel_0.mp3"],
+    onplay: function () {
+      playing0 = true;
+      playButtonIntro.classList.add("invisible");
+      audioGraphNoPlayIntro.classList.add("invisible");
+      pauseButtonIntro.classList.remove("invisible");
+      audioGraphPlayIntro.classList.remove("invisible");
+    },
+    onpause: function () {
+      playing0 = false;
+      pauseButtonIntro.classList.add("invisible");
+      audioGraphPlayIntro.classList.add("invisible");
+      playButtonIntro.classList.remove("invisible");
+      audioGraphNoPlayIntro.classList.remove("invisible");
+    },
+    onend: function () {
+      playing0 = false;
+      pauseButtonIntro.classList.add("invisible");
+      audioGraphPlayIntro.classList.add("invisible");
+      playButtonIntro.classList.remove("invisible");
+      audioGraphNoPlayIntro.classList.remove("invisible");
+    }
+  });
+  playAudioIntro = () => {
+    playing0 ? sound0.pause() : sound0.play();
+  };
+  sound0Stop = () => {
+    sound0.stop();
+    playing0 = false;
+    pauseButtonIntro.classList.add("invisible");
+    audioGraphPlayIntro.classList.add("invisible");
+    playButtonIntro.classList.remove("invisible");
+    audioGraphNoPlayIntro.classList.remove("invisible");
+  };
 
   let playing1 = false;
   const sound1 = new Howl({
@@ -267,11 +312,12 @@ $(document).ready(function () {
       if (entry.isIntersecting) {
         if (entry.target.id === "intro") {
           dataContainer.classList.add("moveToRight");
-          dataContainer.classList.remove("moveToLeft");
+          dataContainer.classList.remove("moveToLeftData");
           dataA.classList.remove("fadeOut");
         } else {
-          dataContainer.classList.add("moveToLeft");
+          dataContainer.classList.add("moveToLeftData");
           dataContainer.classList.remove("moveToRight");
+          sound0Stop();
         }
         if (entry.target.id === "project01") {
           dataA.classList.add("fadeOut");
@@ -333,7 +379,7 @@ $(document).ready(function () {
           computer_3.classList.add("fadeInRight");
           labguy_3_1.classList.add("fadeInUp");
           labguy_3_2.classList.add("fadeInDown");
-          gear.classList.add("fadeIn");
+          gear3.classList.add("fadeIn");
         } else {
           dataD.classList.remove("fadeIn");
           dataD.classList.add("fadeOut");
@@ -376,6 +422,9 @@ $(document).ready(function () {
           dataF.classList.remove("fadeOut");
 
           texto5.classList.add("fadeInLeft");
+          tube_5.classList.add("fadeInLeft");
+          arrows_5.classList.add("fadeIn");
+          marbles_orange.classList.add("fadeInDownB");
           comp_5_1.classList.add("fadeInDown");
           comp_5_2.classList.add("fadeInDownB");
           comp_5_3.classList.add("fadeInDownC");
@@ -390,6 +439,9 @@ $(document).ready(function () {
           comp_5_2.classList.remove("fadeInDownB");
           comp_5_3.classList.remove("fadeInDownC");
           center_5.classList.remove("fadeInRight");
+          marbles_orange.classList.remove("fadeInDownB");
+          tube_5.classList.remove("fadeInLeft");
+          arrows_5.classList.remove("fadeIn");
           gear5.classList.remove("fadeIn");
           sound5Stop();
         }
