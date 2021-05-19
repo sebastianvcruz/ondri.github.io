@@ -8,7 +8,7 @@ html {
 .y-mandatory {
   height: 100vh;
   overflow-x: hidden;
-  overflow: scroll;
+  overflow-y: scroll;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
 }
