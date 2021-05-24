@@ -362,7 +362,6 @@
     <rect id="e5bzltuqycpk317" width="2.220000" height="2.220000" rx="0" ry="0" transform="matrix(1 0 0 1 74.23000000000000 41.32000000000000)" fill="rgb(0,165,255)" stroke="none" stroke-width="1"/>
     <rect id="e5bzltuqycpk318" width="2.220000" height="2.220000" rx="0" ry="0" transform="matrix(1 0 0 1 71.47000000000000 44.01000000000000)" fill="rgb(0,165,255)" stroke="none" stroke-width="1"/>
     <rect id="e5bzltuqycpk319" width="2.220000" height="2.220000" rx="0" ry="0" transform="matrix(1 0 0 1 71.47000000000000 41.32000000000000)" fill="rgb(0,165,255)" stroke="none" stroke-width="1"/>
-    <circle id="e5bzltuqycpk320" r="23.680000" transform="matrix(1 0 0 1 115.88000000000000 59.26000000000000)" fill="none" stroke="rgb(0,151,255)" stroke-width="1.850000" stroke-miterlimit="10"/>
     <circle id="e5bzltuqycpk321" r="7.270000" transform="matrix(1 0 0 1 103.91000000000000 48.04000000000000)" fill="rgb(0,151,255)" stroke="none" stroke-width="1"/>
     <circle id="e5bzltuqycpk322" r="7.270000" transform="matrix(1 0 0 1 119.63000000000000 42.85000000000000)" fill="rgb(0,151,255)" stroke="none" stroke-width="1"/>
     <circle id="e5bzltuqycpk323" r="7.270000" transform="matrix(0.98000000000000 0 0 0.98000000000000 115.88000002136231 59.85999997406006)" fill="rgb(0,151,255)" stroke="none" stroke-width="1"/>
@@ -377,4 +376,6 @@
     <circle id="e5bzltuqycpk332" r="7.270000" transform="matrix(1 0 0 1 127.81000000000000 70.04000000000001)" fill="rgb(58,58,58)" stroke="none" stroke-width="1"/>
     <circle id="e5bzltuqycpk333" r="7.270000" transform="matrix(1 0 0 1 100.40000000000001 64.29000000000001)" fill="rgb(58,58,58)" stroke="none" stroke-width="1"/>
     <circle id="e5bzltuqycpk334" r="7.270000" transform="matrix(1 0 0 1 111.80000000000000 75.59000000000000)" fill="rgb(58,58,58)" stroke="none" stroke-width="1"/>
+ <circle id="e5bzltuqycpk320" r="23.680000" transform="matrix(1 0 0 1 115.88000000000000 59.26000000000000)" fill="none" stroke="rgb(0,151,255)" stroke-width="1.850000" stroke-miterlimit="10"/>
+ 
 </svg>

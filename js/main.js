@@ -1,13 +1,25 @@
 $(document).ready(function () {
+  const screenWidth =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+  const screenHeight =
+    window.innerHeight ||
+    document.documentElement.clientHeight ||
+    document.body.clientHeight;
+  const peperoniPos =
+    screenHeight > 810 ? screenWidth / 2 : screenWidth / 2 + 34;
+
   const animateList = [...document.querySelectorAll("section")];
 
   const gear1 = document.getElementById("gearMain1");
   const gear2 = document.getElementById("gearMain2");
-  const gear3= document.getElementById("gearMain3");
-  const gear4= document.getElementById("gearMain4");
-  const gear5= document.getElementById("gearMain5");
+  const gear3 = document.getElementById("gearMain3");
+  const gear4 = document.getElementById("gearMain4");
+  const gear5 = document.getElementById("gearMain5");
 
   const dataContainer = document.getElementById("dataContainer");
+  dataContainer.style.left = `${peperoniPos}px`;
   const dataA = document.getElementById("data-A");
   const dataB = document.getElementById("data-B");
   const dataC = document.getElementById("data-C");
@@ -41,7 +53,7 @@ $(document).ready(function () {
   const texto5 = document.getElementById("textColumn5");
   const tube_5 = document.getElementById("tube_5");
   const arrows_5 = document.getElementById("arrows_5");
-  const marbles_orange = document.getElementById("marbles_orange")
+  const marbles_orange = document.getElementById("marbles_orange");
   const comp_5_1 = document.getElementById("comp_5_1");
   const comp_5_2 = document.getElementById("comp_5_2");
   const comp_5_3 = document.getElementById("comp_5_3");
@@ -49,34 +61,35 @@ $(document).ready(function () {
 
   const playButtonIntro = document.getElementById("playButtonIntro");
   const pauseButtonIntro = document.getElementById("pauseButtonIntro");
-  const audioGraphNoPlayIntro=document.getElementById("audioGraphNoPlayIntro");
-  const audioGraphPlayIntro=document.getElementById("playAnimationIntro");
+  const audioGraphNoPlayIntro = document.getElementById(
+    "audioGraphNoPlayIntro"
+  );
+  const audioGraphPlayIntro = document.getElementById("playAnimationIntro");
 
   const playButton = document.getElementById("playButton");
   const pauseButton = document.getElementById("pauseButton");
-  const audioGraphNoPlay=document.getElementById("audioGraphNoPlay");
-  const audioGraphPlay=document.getElementById("playAnimation");
+  const audioGraphNoPlay = document.getElementById("audioGraphNoPlay");
+  const audioGraphPlay = document.getElementById("playAnimation");
 
   const playButton2 = document.getElementById("playButton2");
   const pauseButton2 = document.getElementById("pauseButton2");
-  const audioGraphNoPlay2=document.getElementById("audioGraphNoPlay2");
-  const audioGraphPlay2=document.getElementById("playAnimation2");
+  const audioGraphNoPlay2 = document.getElementById("audioGraphNoPlay2");
+  const audioGraphPlay2 = document.getElementById("playAnimation2");
 
   const playButton3 = document.getElementById("playButton3");
   const pauseButton3 = document.getElementById("pauseButton3");
-  const audioGraphNoPlay3=document.getElementById("audioGraphNoPlay3");
-  const audioGraphPlay3=document.getElementById("playAnimation3");
+  const audioGraphNoPlay3 = document.getElementById("audioGraphNoPlay3");
+  const audioGraphPlay3 = document.getElementById("playAnimation3");
 
   const playButton4 = document.getElementById("playButton4");
   const pauseButton4 = document.getElementById("pauseButton4");
-  const audioGraphNoPlay4=document.getElementById("audioGraphNoPlay4");
-  const audioGraphPlay4=document.getElementById("playAnimation4");
-
+  const audioGraphNoPlay4 = document.getElementById("audioGraphNoPlay4");
+  const audioGraphPlay4 = document.getElementById("playAnimation4");
 
   const playButton5 = document.getElementById("playButton5");
   const pauseButton5 = document.getElementById("pauseButton5");
-  const audioGraphNoPlay5=document.getElementById("audioGraphNoPlay5");
-  const audioGraphPlay5=document.getElementById("playAnimation5");
+  const audioGraphNoPlay5 = document.getElementById("audioGraphNoPlay5");
+  const audioGraphPlay5 = document.getElementById("playAnimation5");
 
   let playing0 = false;
   const sound0 = new Howl({
@@ -226,7 +239,6 @@ $(document).ready(function () {
     audioGraphNoPlay3.classList.remove("invisible");
   };
 
-
   let playing4 = false;
   const sound4 = new Howl({
     src: ["../audio/Panel_4.mp3"],
@@ -303,7 +315,7 @@ $(document).ready(function () {
 
   // const animateList = document.querySelectorAll("#project01 ");
   const options = {
-    rootMargin: '0px',
+    rootMargin: "0px",
     threshold: 0.1
   };
   observer = new IntersectionObserver((elms) => {
@@ -316,6 +328,7 @@ $(document).ready(function () {
           dataA.classList.remove("fadeOut");
         } else {
           dataContainer.classList.add("moveToLeftData");
+          // dataContainer.classList.add("bounceIn");
           dataContainer.classList.remove("moveToRight");
           sound0Stop();
         }
@@ -455,10 +468,15 @@ $(document).ready(function () {
 
   //
   cssScrollSnapPolyfill();
-  // <iframe width="100%" id="iframeInfograph" src="https://hardcore-blackwell-15e57b.netlify.app/" title="infograf" frameborder="0" style="overflow: hidden" allowfullscreen></iframe>
-//<script language="javascript" type="text/javascript">
-// const iframe = document.getElementById("iframeInfograph")
-// let vphSize= window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-// iframe.height = vphSize*0.75
-//  </script>
+  {
+    /* 
+  <iframe width="100%" id="iframeInfograph" src="https://hardcore-blackwell-15e57b.netlify.app/" title="infograf" frameborder="0" style="overflow-x: hidden;  overflow-y: scroll" allowfullscreen></iframe>
+  <script language="javascript" type="text/javascript">
+const iframe = document.getElementById("iframeInfograph")
+let vphSize= window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+iframe.height = vphSize-220
+  console.log("vphSize*75: ",vphSize-220)
+   console.log("vphSize: ",vphSize)
+ </script> */
+  }
 });
