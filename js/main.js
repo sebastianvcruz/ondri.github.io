@@ -46,7 +46,6 @@ $(document).ready(function () {
   const labguy_3_2 = document.getElementById("labguy_3_2");
 
   const texto4 = document.getElementById("textColumn4");
-  const tube_4 = document.getElementById("tube_4");
   const dataGraph_4 = document.getElementById("dataGraph_4");
   const labguy_4 = document.getElementById("labguy_4");
 
@@ -323,31 +322,25 @@ $(document).ready(function () {
     elms.forEach((entry) => {
       if (entry.isIntersecting) {
         if (entry.target.id === "intro") {
-          dataContainer.classList.add("moveToRight");
-          dataContainer.classList.remove("moveToLeftData");
+          dataA.classList.add("bounceIn");
           dataA.classList.remove("fadeOut");
         } else {
-          dataContainer.classList.add("moveToLeftData");
-          // dataContainer.classList.add("bounceIn");
-          dataContainer.classList.remove("moveToRight");
+          dataA.classList.add("fadeOutDown");
+          dataA.classList.remove("bounceIn");
           sound0Stop();
         }
         if (entry.target.id === "project01") {
-          dataA.classList.add("fadeOut");
-          dataA.classList.remove("fadeIn");
-          dataB.classList.add("fadeIn");
+          dataB.classList.add("bounceIn");
           dataB.classList.remove("fadeOut");
           gear1.classList.add("fadeIn");
-
           texto1.classList.add("fadeInLeft");
           labGuy.classList.add("fadeInRight");
           outlet.classList.add("fadeInLeft");
           computer.classList.add("fadeInUp");
-
           visuals.style.backgroundColor = "#F0F2F4";
         } else {
-          dataB.classList.remove("fadeIn");
-          dataB.classList.add("fadeOut");
+          dataB.classList.remove("bounceIn");
+          dataB.classList.add("fadeOutDownNormal");
 
           texto1.classList.remove("fadeInLeft");
           texto2.classList.remove("fadeInLeft");
@@ -360,7 +353,7 @@ $(document).ready(function () {
         if (entry.target.id === "project02") {
           dataB.classList.add("fadeOut");
           dataB.classList.remove("fadeIn");
-          dataC.classList.add("fadeIn");
+          dataC.classList.add("bounceIn");
           dataC.classList.remove("fadeOut");
           gear2.classList.add("fadeIn");
 
@@ -369,8 +362,8 @@ $(document).ready(function () {
           tube.classList.add("fadeInDown");
           labtalk.classList.add("fadeInRight");
         } else {
-          dataC.classList.remove("fadeIn");
-          dataC.classList.add("fadeOut");
+          dataC.classList.remove("bounceIn");
+          dataC.classList.add("fadeOutDownNormal");
 
           texto2.classList.remove("fadeInLeft");
           server.classList.remove("fadeIn");
@@ -382,7 +375,7 @@ $(document).ready(function () {
         if (entry.target.id === "project03") {
           dataC.classList.add("fadeOut");
           dataC.classList.remove("fadeIn");
-          dataD.classList.add("fadeIn");
+          dataD.classList.add("bounceIn");
           dataD.classList.remove("fadeOut");
           gear3.classList.add("fadeIn");
 
@@ -394,8 +387,8 @@ $(document).ready(function () {
           labguy_3_2.classList.add("fadeInDown");
           gear3.classList.add("fadeIn");
         } else {
-          dataD.classList.remove("fadeIn");
-          dataD.classList.add("fadeOut");
+          dataD.classList.remove("bounceIn");
+          dataD.classList.add("fadeOutDownNormal");
 
           texto3.classList.remove("fadeInLeft");
           dataGraph.classList.remove("fadeIn");
@@ -409,20 +402,18 @@ $(document).ready(function () {
         if (entry.target.id === "project04") {
           dataD.classList.add("fadeOut");
           dataD.classList.remove("fadeIn");
-          dataE.classList.add("fadeIn");
+          dataE.classList.add("bounceIn");
           dataE.classList.remove("fadeOut");
 
           texto4.classList.add("fadeInLeft");
-          tube_4.classList.add("fadeInRight");
           dataGraph_4.classList.add("fadeIn");
           labguy_4.classList.add("fadeInLeft");
           gear4.classList.add("fadeIn");
         } else {
-          dataE.classList.remove("fadeIn");
-          dataE.classList.add("fadeOut");
+          dataE.classList.remove("bounceIn");
+          dataE.classList.add("fadeOutDownNormal");
 
           texto4.classList.remove("fadeInLeft");
-          tube_4.classList.remove("fadeInRight");
           dataGraph_4.classList.remove("fadeIn");
           labguy_4.classList.remove("fadeInLeft");
           gear4.classList.remove("fadeIn");
@@ -431,7 +422,7 @@ $(document).ready(function () {
         if (entry.target.id === "project05") {
           dataE.classList.add("fadeOut");
           dataE.classList.remove("fadeIn");
-          dataF.classList.add("fadeIn");
+          dataF.classList.add("bounceIn");
           dataF.classList.remove("fadeOut");
 
           texto5.classList.add("fadeInLeft");
@@ -444,7 +435,7 @@ $(document).ready(function () {
           center_5.classList.add("fadeInRight");
           gear5.classList.add("fadeIn");
         } else {
-          dataF.classList.remove("fadeIn");
+          dataF.classList.remove("bounceIn");
           dataF.classList.add("fadeOut");
 
           texto5.classList.remove("fadeInLeft");
