@@ -18,8 +18,6 @@ $(document).ready(function () {
   const gear4 = document.getElementById("gearMain4");
   const gear5 = document.getElementById("gearMain5");
 
-  const dataContainer = document.getElementById("dataContainer");
-  dataContainer.style.left = `${peperoniPos}px`;
   const dataA = document.getElementById("data-A");
   const dataB = document.getElementById("data-B");
   const dataC = document.getElementById("data-C");
@@ -56,6 +54,7 @@ $(document).ready(function () {
   const comp_5_1 = document.getElementById("comp_5_1");
   const comp_5_2 = document.getElementById("comp_5_2");
   const comp_5_3 = document.getElementById("comp_5_3");
+  const comp_5_4 = document.getElementById("comp_5_4");
   const center_5 = document.getElementById("center_5");
 
   const playButtonIntro = document.getElementById("playButtonIntro");
@@ -432,6 +431,7 @@ $(document).ready(function () {
           comp_5_1.classList.add("fadeInDown");
           comp_5_2.classList.add("fadeInDownB");
           comp_5_3.classList.add("fadeInDownC");
+          comp_5_4.classList.add("fadeInDownC");
           center_5.classList.add("fadeInRight");
           gear5.classList.add("fadeIn");
         } else {
@@ -442,6 +442,7 @@ $(document).ready(function () {
           comp_5_1.classList.remove("fadeInDown");
           comp_5_2.classList.remove("fadeInDownB");
           comp_5_3.classList.remove("fadeInDownC");
+          comp_5_4.classList.remove("fadeInDownC");
           center_5.classList.remove("fadeInRight");
           marbles_orange.classList.remove("fadeInDownB");
           tube_5.classList.remove("fadeInLeft");
