@@ -3,6 +3,7 @@ html {
   line-height: 1.4;
   --scale-factor: 0.85;
   --scale-factor2: 0.7;
+  --scale-factor3: 0.6;
 }
 
 .y-mandatory {
@@ -103,28 +104,31 @@ a:active {
 #project05 {
   scroll-snap-align: end;
 }
-.techLink{
-  top:65px;
+.mbc-5 {
+  margin-bottom: 3rem !important;
 }
-.et_pb_button_20:hover{
-  border-radius: 0!important;
+.techLink {
+  top: 65px;
+}
+.et_pb_button_20:hover {
+  border-radius: 0 !important;
   background-image: initial;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 0px!important;
-  box-shadow: inset 0 -0.15em #2786e0!important;
-  color: #2786e0!important;
+  border-radius: 0px !important;
+  box-shadow: inset 0 -0.15em #2786e0 !important;
+  color: #2786e0 !important;
 }
 
 .et_pb_button_20 {
-  color: #2786e0!important;
-  border-width: 0px!important;
+  color: #2786e0 !important;
+  border-width: 0px !important;
   border-color: #d56a9f;
   border-radius: 0px;
   letter-spacing: 0px;
   font-size: 16px;
-  font-weight: 700!important;
-  padding-bottom: 7px!important;
+  font-weight: 700 !important;
+  padding-bottom: 7px !important;
 }
 .staticContainer {
   height: 100%;
@@ -163,6 +167,9 @@ a:active {
   width: 33vw;
   height: 33vw;
   /* background-color: azure; */
+}
+.mbc-5 {
+  margin-bottom: 3rem !important;
 }
 .data-A {
   width: 130px;
@@ -267,8 +274,8 @@ a:active {
 }
 .tube_5 {
   width: calc(17vw * var(--scale-factor));
-  left: 10%;
-  top: 41%;
+  left: 9%;
+  top: 20%;
   z-index: 3;
 }
 .arrows_5 {
@@ -303,7 +310,7 @@ a:active {
   top: 90%;
   z-index: 3;
 }
-.comp_5_4{
+.comp_5_4 {
   width: calc(6vw * var(--scale-factor));
   left: 103%;
   top: 68%;
@@ -939,7 +946,7 @@ a:active {
    Media Queries
    ========================================================================== */
 
-@media only screen and (max-height: 750px) and (orientation: landscape) {
+@media only screen and (max-height: 840px) and (orientation: landscape) {
   /* =General */
   .data-A {
     width: 95px;
@@ -962,6 +969,13 @@ a:active {
 
   h5 {
     font-size: 1rem;
+  }
+  .audio3pos {
+    margin-top: -21px;
+  }
+
+  .techLink {
+    top: 29px;
   }
 
   .gear {
@@ -1031,8 +1045,8 @@ a:active {
 
   .tube_5 {
     width: calc(17vw * var(--scale-factor));
-    left: 10%;
-    top: 41%;
+    left: 9%;
+    top: 20%;
     z-index: 3;
   }
   .mb-4 {
@@ -1141,7 +1155,7 @@ a:active {
     display: block;
   }
   .visualsMB {
-    min-height: 50vh;
+    min-height: 35vh;
     background-color: #f0f2f4;
   }
   .textMB {
@@ -1181,23 +1195,192 @@ a:active {
   }
 }
 
-@media only screen and (max-height: 500px) and (orientation: landscape) {
+@media only screen and (max-height: 550px) and (orientation: landscape) {
   .data-A {
     width: 65px;
+    margin-top: 3em;
   }
   .data-B {
     width: 55px;
+    height: 110px;
   }
   .data-C {
     width: 55px;
+    height: 110px;
   }
   .data-D {
     width: 55px;
+    height: 110px;
+    margin-top: 10px;
   }
   .data-E {
     width: 55px;
+    height: 110px;
   }
   .data-F {
     width: 65px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .mbc-5 {
+    margin-bottom: 1rem !important;
+  }
+  .butLeft {
+    margin-top: 0px;
+  }
+  .playButtonImg {
+    width: 30px;
+  }
+
+  .playAnimation {
+    width: 80px;
+    margin-left: 43px;
+    top: -7px;
+  }
+  h5 {
+    font-size: 0.8rem;
+  }
+  .arrow {
+    width: 1.5em;
+  }
+  .textColumn {
+    z-index: 6;
+    padding-top: 10vh;
+  }
+  .et_pb_button_20 {
+    font-size: 14px;
+  }
+  .nextSectionButton {
+    padding-bottom: 40px;
+  }
+  #id {
+    margin-top: -20px;
+  }
+  .techLink {
+    top: 14px;
+  }
+  .audio3pos {
+    margin-top: -21px;
+  }
+
+  .continue3 {
+    margin-top: -20px;
+  }
+
+  .gear {
+    width: calc(33vw * var(--scale-factor3));
+  }
+  .labguy {
+    width: calc(18vw * var(--scale-factor3));
+    left: 13%;
+    top: 16%;
+  }
+  .outlet {
+    width: calc(6.5vw * var(--scale-factor3));
+    left: 4%;
+    top: 14%;
+  }
+  .computer {
+    width: calc(16vw * var(--scale-factor3));
+    left: 51%;
+    top: 36%;
+  }
+  .server {
+    width: calc(9vw * var(--scale-factor3));
+    left: 56%;
+    top: 36%;
+  }
+  .tube {
+    width: calc(23vw * var(--scale-factor3));
+    left: 6%;
+    top: 40%;
+  }
+  .labtalk {
+    width: calc(25vw * var(--scale-factor3));
+    left: 7%;
+    top: 7%;
+  }
+  .dataGraph {
+    width: calc(13vw * var(--scale-factor3));
+    left: 54%;
+    top: 35%;
+  }
+  .tube_3 {
+    width: calc(13vw * var(--scale-factor3));
+    left: 80%;
+    top: 6%;
+  }
+  .computer_3 {
+    width: calc(12.5vw * var(--scale-factor3));
+    left: 26%;
+    top: 43%;
+  }
+  .labguy_3_1 {
+    width: calc(10vw * var(--scale-factor3));
+    left: 8%;
+    top: 47%;
+  }
+  .labguy_3_2 {
+    width: calc(6vw * var(--scale-factor3));
+    left: 31%;
+    top: 48%;
+  }
+  .labguy_4 {
+    width: calc(13vw * var(--scale-factor3));
+    left: 25%;
+    top: 13%;
+  }
+  
+  .tube_5 {
+    width: calc(17vw * var(--scale-factor3));
+    left: 18%;
+    top: 26%;
+    z-index: 3;
+  }
+  .center_5 {
+    width: calc(17vw * var(--scale-factor3));
+    left: 50%;
+    top: 34%;
+  }
+  .comp_5_2 {
+    width: calc(11vw * var(--scale-factor3));
+    left: 39%;
+    top: 97%;
+    z-index: 3;
+  }
+  
+  .comp_5_3 {
+    width: calc(11vw * var(--scale-factor3));
+    left: 65%;
+    top: 97%;
+    z-index: 3;
+  }
+  .comp_5_4 {
+    width: calc(6vw * var(--scale-factor3));
+    left: 91%;
+    top: 75%;
+    z-index: 0;
+  }
+  .arrows_5 {
+    width: calc(30vw * var(--scale-factor3));
+    left: 22%;
+    top: 75%;
+    z-index: 0;
+  }
+  .marbles_orange {
+    width: calc(5vw * var(--scale-factor3));
+    left: 11%;
+    top: 32%;
+    z-index: 1;
+  }
+  .comp_5_1 {
+    width: calc(11vw * var(--scale-factor3));
+    left: 13%;
+    top: 97%;
+    z-index: 3;
   }
 }

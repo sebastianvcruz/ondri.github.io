@@ -50,7 +50,6 @@ $(document).ready(function () {
   const texto5 = document.getElementById("textColumn5");
   const tube_5 = document.getElementById("tube_5");
   const arrows_5 = document.getElementById("arrows_5");
-  const marbles_orange = document.getElementById("marbles_orange");
   const comp_5_1 = document.getElementById("comp_5_1");
   const comp_5_2 = document.getElementById("comp_5_2");
   const comp_5_3 = document.getElementById("comp_5_3");
@@ -427,7 +426,6 @@ $(document).ready(function () {
           texto5.classList.add("fadeInLeft");
           tube_5.classList.add("fadeInLeft");
           arrows_5.classList.add("fadeIn");
-          marbles_orange.classList.add("fadeInDownB");
           comp_5_1.classList.add("fadeInDown");
           comp_5_2.classList.add("fadeInDownB");
           comp_5_3.classList.add("fadeInDownC");
@@ -444,7 +442,6 @@ $(document).ready(function () {
           comp_5_3.classList.remove("fadeInDownC");
           comp_5_4.classList.remove("fadeInDownC");
           center_5.classList.remove("fadeInRight");
-          marbles_orange.classList.remove("fadeInDownB");
           tube_5.classList.remove("fadeInLeft");
           arrows_5.classList.remove("fadeIn");
           gear5.classList.remove("fadeIn");
