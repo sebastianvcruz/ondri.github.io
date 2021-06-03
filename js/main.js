@@ -25,6 +25,13 @@ $(document).ready(function () {
   const dataE = document.getElementById("data-E");
   const dataF = document.getElementById("data-F");
 
+  const MdataA = document.getElementById("Mdata-A");
+  const MdataB = document.getElementById("Mdata-B");
+  const MdataC = document.getElementById("Mdata-C");
+  const MdataD = document.getElementById("Mdata-D");
+  const MdataE = document.getElementById("Mdata-E");
+  const MdataF = document.getElementById("Mdata-F");
+
   const visuals = document.getElementById("visuals");
   const texto1 = document.getElementById("textColumn");
   const labGuy = document.getElementById("labGuy");
@@ -330,6 +337,9 @@ $(document).ready(function () {
         if (entry.target.id === "project01") {
           dataB.classList.add("bounceIn");
           dataB.classList.remove("fadeOut");
+          MdataB.classList.add("bounceIn");
+          MdataB.classList.remove("fadeOut");
+
           gear1.classList.add("fadeIn");
           texto1.classList.add("fadeInLeft");
           labGuy.classList.add("fadeInRight");
@@ -339,6 +349,8 @@ $(document).ready(function () {
         } else {
           dataB.classList.remove("bounceIn");
           dataB.classList.add("fadeOutDownNormal");
+          MdataB.classList.remove("bounceIn");
+          MdataB.classList.add("fadeOutDownNormal");
 
           texto1.classList.remove("fadeInLeft");
           texto2.classList.remove("fadeInLeft");
@@ -353,6 +365,11 @@ $(document).ready(function () {
           dataB.classList.remove("fadeIn");
           dataC.classList.add("bounceIn");
           dataC.classList.remove("fadeOut");
+          MdataB.classList.add("fadeOut");
+          MdataB.classList.remove("fadeIn");
+          MdataC.classList.add("bounceIn");
+          MdataC.classList.remove("fadeOut");
+
           gear2.classList.add("fadeIn");
 
           texto2.classList.add("fadeInLeft");
@@ -362,6 +379,8 @@ $(document).ready(function () {
         } else {
           dataC.classList.remove("bounceIn");
           dataC.classList.add("fadeOutDownNormal");
+          MdataC.classList.remove("bounceIn");
+          MdataC.classList.add("fadeOutDownNormal");
 
           texto2.classList.remove("fadeInLeft");
           server.classList.remove("fadeIn");
@@ -375,6 +394,11 @@ $(document).ready(function () {
           dataC.classList.remove("fadeIn");
           dataD.classList.add("bounceIn");
           dataD.classList.remove("fadeOut");
+          MdataC.classList.add("fadeOut");
+          MdataC.classList.remove("fadeIn");
+          MdataD.classList.add("bounceIn");
+          MdataD.classList.remove("fadeOut");
+
           gear3.classList.add("fadeIn");
 
           texto3.classList.add("fadeInLeft");
@@ -387,6 +411,8 @@ $(document).ready(function () {
         } else {
           dataD.classList.remove("bounceIn");
           dataD.classList.add("fadeOutDownNormal");
+          MdataD.classList.remove("bounceIn");
+          MdataD.classList.add("fadeOutDownNormal");
 
           texto3.classList.remove("fadeInLeft");
           dataGraph.classList.remove("fadeIn");
@@ -402,6 +428,10 @@ $(document).ready(function () {
           dataD.classList.remove("fadeIn");
           dataE.classList.add("bounceIn");
           dataE.classList.remove("fadeOut");
+          MdataD.classList.add("fadeOut");
+          MdataD.classList.remove("fadeIn");
+          MdataE.classList.add("bounceIn");
+          MdataE.classList.remove("fadeOut");
 
           texto4.classList.add("fadeInLeft");
           dataGraph_4.classList.add("fadeIn");
@@ -410,6 +440,8 @@ $(document).ready(function () {
         } else {
           dataE.classList.remove("bounceIn");
           dataE.classList.add("fadeOutDownNormal");
+          MdataE.classList.remove("bounceIn");
+          MdataE.classList.add("fadeOutDownNormal");
 
           texto4.classList.remove("fadeInLeft");
           dataGraph_4.classList.remove("fadeIn");
@@ -422,6 +454,10 @@ $(document).ready(function () {
           dataE.classList.remove("fadeIn");
           dataF.classList.add("bounceIn");
           dataF.classList.remove("fadeOut");
+          MdataE.classList.add("fadeOut");
+          MdataE.classList.remove("fadeIn");
+          MdataF.classList.add("bounceIn");
+          MdataF.classList.remove("fadeOut");
 
           texto5.classList.add("fadeInLeft");
           tube_5.classList.add("fadeInLeft");
@@ -435,6 +471,8 @@ $(document).ready(function () {
         } else {
           dataF.classList.remove("bounceIn");
           dataF.classList.add("fadeOut");
+          MdataF.classList.remove("bounceIn");
+          MdataF.classList.add("fadeOut");
 
           texto5.classList.remove("fadeInLeft");
           // comp_5_1.classList.remove("fadeInDown");

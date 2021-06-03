@@ -1120,6 +1120,9 @@ a:active {
     width: 65px;
     height: 90px;
   }
+  .md-flex{
+    display: flex !important;
+  }
   .smaller{
     font-size: 14px;
   }
