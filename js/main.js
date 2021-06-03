@@ -437,12 +437,12 @@ $(document).ready(function () {
           dataF.classList.add("fadeOut");
 
           texto5.classList.remove("fadeInLeft");
-          comp_5_1.classList.remove("fadeInDown");
-          comp_5_2.classList.remove("fadeInDownB");
-          comp_5_3.classList.remove("fadeInDownC");
-          comp_5_4.classList.remove("fadeInDownC");
-          center_5.classList.remove("fadeInRight");
-          tube_5.classList.remove("fadeInLeft");
+          // comp_5_1.classList.remove("fadeInDown");
+          // comp_5_2.classList.remove("fadeInDownB");
+          // comp_5_3.classList.remove("fadeInDownC");
+          // comp_5_4.classList.remove("fadeInDownC");
+          // center_5.classList.remove("fadeInRight");
+          // tube_5.classList.remove("fadeInLeft");
           arrows_5.classList.remove("fadeIn");
           gear5.classList.remove("fadeIn");
           sound5Stop();
@@ -459,13 +459,15 @@ $(document).ready(function () {
   cssScrollSnapPolyfill();
   {
     /* 
-  <iframe width="100%" id="iframeInfograph" src="https://hardcore-blackwell-15e57b.netlify.app/" title="infograf" frameborder="0" style="overflow-x: hidden;  overflow-y: scroll" allowfullscreen></iframe>
-  <script language="javascript" type="text/javascript">
-const iframe = document.getElementById("iframeInfograph")
+    <iframe width="100%" id="iframeInfograph" src="https://hardcore-blackwell-15e57b.netlify.app/" title="infograf" frameborder="0" style="overflow-x: hidden" allowfullscreen></iframe>
+<script language="javascript" type="text/javascript">
+const iframe = document.getElementById("iframeInfograph");
+let vpwSize = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 let vphSize= window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-iframe.height = vphSize-220
-  console.log("vphSize*75: ",vphSize-220)
-   console.log("vphSize: ",vphSize)
+iframe.height = vpwSize>600 ? vphSize-175: vphSize-112
+  console.log("vphSize*75: ",vphSize-214)
+   console.log("HEIGHT: ",vphSize)
+  console.log("WIDTH",vpwSize)
  </script> */
   }
 });

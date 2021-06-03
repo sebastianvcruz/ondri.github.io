@@ -959,6 +959,7 @@ a:active {
   }
   .data-D {
     width: 85px;
+    margin-top: 50px;
   }
   .data-E {
     width: 85px;
@@ -1101,18 +1102,26 @@ a:active {
   }
   .data-B {
     width: 55px;
+    height: 90px;
   }
   .data-C {
     width: 55px;
+    height: 90px;
   }
   .data-D {
     width: 55px;
+    height: 90px;
   }
   .data-E {
     width: 55px;
+    height: 90px;
   }
   .data-F {
     width: 65px;
+    height: 90px;
+  }
+  .smaller{
+    font-size: 14px;
   }
   h2 {
     color: #2c2a29;
@@ -1122,6 +1131,9 @@ a:active {
     font-weight: 600;
     line-height: 1.1;
   }
+ h5 {
+    font-size: 18px;
+}
   br {
     display: none;
   }
@@ -1132,14 +1144,21 @@ a:active {
   .pt-5 {
     padding-top: 9rem !important;
   }
+  .playButtonImg {
+    width: 30px;
+  }
   .playAnimation {
-    width: 100px;
-    margin-left: 61px;
-    top: -3px;
+    width: 80px;
+    margin-left: 43px;
+    top: -7px;
+  }
+  .playButtonMB{
+    bottom: 35px;
+    left: 20px;
   }
   .butLeft {
     margin-top: 15px;
-    margin-left: -50%;
+    margin-left: -36%;
   }
   .project {
     height: 50%;
@@ -1159,13 +1178,10 @@ a:active {
     background-color: #f0f2f4;
   }
   .textMB {
-    min-height: 50vh;
+    min-height: 65vh;
   }
   p {
     font-size: 15px;
-  }
-  .smaller {
-    font-size: 12px;
   }
   .moveToLeftData {
     -webkit-animation-name: moveToLeftData;
@@ -1191,6 +1207,26 @@ a:active {
     }
     100% {
       transform: translate(0vw, 15vh);
+    }
+  }
+  @-webkit-keyframes fadeOutDown {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 500%, 0);
+      transform: translate3d(0, 500%, 0);
+    }
+  }
+  @keyframes fadeOutDown {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 500%, 0);
+      transform: translate3d(0, 500%, 0);
     }
   }
 }
@@ -1235,7 +1271,6 @@ a:active {
   .playButtonImg {
     width: 30px;
   }
-
   .playAnimation {
     width: 80px;
     margin-left: 43px;
