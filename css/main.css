@@ -1382,7 +1382,7 @@ a:active {
   .center_5 {
     width: calc(17vw * var(--scale-factor3));
     left: 50%;
-    top: 34%;
+    top: 32%;
   }
   .comp_5_2 {
     width: calc(11vw * var(--scale-factor3));
