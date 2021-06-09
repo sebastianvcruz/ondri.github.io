@@ -1161,6 +1161,9 @@ a:active {
   .smaller {
     font-size: 14px;
   }
+  .techLink{
+    font-size: 15px;
+  }
   h2 {
     color: #2c2a29;
     font-family: "Verdana";
