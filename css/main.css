@@ -1273,9 +1273,6 @@ a:active {
 }
 
 @media only screen and (max-height: 570px) and (orientation: landscape) {
-  .mbhide{
-    display: none;
-  }
   .data-A {
     width: 65px;
     margin-top: 3em;
@@ -1465,6 +1462,9 @@ a:active {
 }
 
 @media only screen and (max-height: 415px) and (orientation: landscape) {
+  .mbhide{
+    display: none;
+  }
   .data-B {
     height: 90px;
 }
