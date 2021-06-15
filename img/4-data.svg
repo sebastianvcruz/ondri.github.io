@@ -1,0 +1,19 @@
+<svg id="e87kp02knr771"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 180 73" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <style><![CDATA[#e87kp02knr772_to {animation: e87kp02knr772_to__to 2000ms linear infinite normal forwards}@keyframes e87kp02knr772_to__to { 0% {offset-distance: 0%} 15% {offset-distance: 0%;animation-timing-function: cubic-bezier(0.420000,0,0.580000,1)} 80% {offset-distance: 100%} 100% {offset-distance: 100%} }#e87kp02knr772_ts {animation: e87kp02knr772_ts__ts 2000ms linear infinite normal forwards}@keyframes e87kp02knr772_ts__ts { 0% {transform: scale(1,1)} 15% {transform: scale(1,1);animation-timing-function: cubic-bezier(0.420000,0,0.580000,1)} 80% {transform: scale(0.418133,0.418133)} 100% {transform: scale(0.418133,0.418133)} }#e87kp02knr772 {animation: e87kp02knr772_c_o 2000ms linear infinite normal forwards}@keyframes e87kp02knr772_c_o { 0% {opacity: 0;animation-timing-function: cubic-bezier(0.420000,0,0.580000,1)} 20% {opacity: 1;animation-timing-function: cubic-bezier(0.420000,0,0.580000,1)} 75% {opacity: 1;animation-timing-function: cubic-bezier(0.420000,0,0.580000,1)} 100% {opacity: 0} }]]></style>
+    <g id="e87kp02knr772_to" transform="translate(60 -10) scale(0.8 0.8)" style="offset-path:path('M-15.708505,55.097346C9.989866,14.971644,68.650247,11.308740,86.343780,38.642349');offset-rotate:0deg">
+        <g id="e87kp02knr772_ts">
+            <g id="e87kp02knr772" transform="translate(-36.590000,-36.584997)" opacity="0">
+                <circle id="e87kp02knr773" r="34.750000" transform="matrix(1 0 0 1 36.59000000000000 36.59000000000000)" fill="rgb(255,255,255)" fill-opacity="0" stroke="rgb(0,151,255)" stroke-width="3.660000" stroke-miterlimit="10"/>
+                <circle id="e87kp02knr774" r="10.670000" transform="matrix(1 0 0 1 19.03000000000000 20.13000000000000)" fill="rgb(0,151,255)" stroke="none" stroke-width="1"/>
+                <circle id="e87kp02knr775" r="10.670000" transform="matrix(1 0 0 1 42.09000000000000 12.50000000000000)" fill="rgb(0,53,84)" stroke="none" stroke-width="1"/>
+                <circle id="e87kp02knr776" r="10.670000" transform="matrix(1 0 0 1 36.59000000000000 37.47000000000000)" fill="rgb(0,151,255)" stroke="none" stroke-width="1"/>
+                <circle id="e87kp02knr777" r="10.670000" transform="matrix(1 0 0 1 59.08000000000000 28.25000000000000)" fill="rgb(0,151,255)" stroke="none" stroke-width="1"/>
+                <circle id="e87kp02knr778" r="10.670000" transform="matrix(1 0 0 1 54.11000000000000 52.41000000000000)" fill="rgb(0,151,255)" stroke="none" stroke-width="1"/>
+                <circle id="e87kp02knr779" r="10.670000" transform="matrix(1 0 0 1 15.25000001055600 43.97000000000000)" fill="rgb(0,151,255)" stroke="none" stroke-width="1"/>
+                <circle id="e87kp02knr7710" r="10.670000" transform="matrix(1 0 0 1 30.60000000000000 60.55000000000000)" fill="rgb(0,151,255)" stroke="none" stroke-width="1"/>
+            </g>
+        </g>
+    </g>
+</svg>
