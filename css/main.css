@@ -1420,31 +1420,31 @@ a:active {
   .center_5 {
     width: calc(17vw * var(--scale-factor3));
     left: 50%;
-    top: 32%;
+    top: 29%;
   }
   .comp_5_2 {
     width: calc(11vw * var(--scale-factor3));
     left: 39%;
-    top: 97%;
+    top: 80%;
     z-index: 3;
   }
 
   .comp_5_3 {
     width: calc(11vw * var(--scale-factor3));
     left: 65%;
-    top: 97%;
+    top: 80%;
     z-index: 3;
   }
   .comp_5_4 {
     width: calc(6vw * var(--scale-factor3));
     left: 91%;
-    top: 75%;
+    top: 62%;
     z-index: 0;
   }
   .arrows_5 {
     width: calc(30vw * var(--scale-factor3));
     left: 22%;
-    top: 75%;
+    top: 62%;
     z-index: 0;
   }
   .marbles_orange {
@@ -1456,7 +1456,7 @@ a:active {
   .comp_5_1 {
     width: calc(11vw * var(--scale-factor3));
     left: 13%;
-    top: 97%;
+    top: 80%;
     z-index: 3;
   }
 }

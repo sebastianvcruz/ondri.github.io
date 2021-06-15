@@ -72,26 +72,36 @@ $(document).ready(function () {
 
   const playButton = document.getElementById("playButton");
   const pauseButton = document.getElementById("pauseButton");
+  const playButtonMB = document.getElementById("playButtonMB");
+  const pauseButtonMB = document.getElementById("pauseButtonMB");
   const audioGraphNoPlay = document.getElementById("audioGraphNoPlay");
   const audioGraphPlay = document.getElementById("playAnimation");
 
   const playButton2 = document.getElementById("playButton2");
   const pauseButton2 = document.getElementById("pauseButton2");
+  const playButton2MB = document.getElementById("playButton2MB");
+  const pauseButton2MB = document.getElementById("pauseButton2MB");
   const audioGraphNoPlay2 = document.getElementById("audioGraphNoPlay2");
   const audioGraphPlay2 = document.getElementById("playAnimation2");
 
   const playButton3 = document.getElementById("playButton3");
   const pauseButton3 = document.getElementById("pauseButton3");
+  const playButton3MB = document.getElementById("playButton3MB");
+  const pauseButton3MB = document.getElementById("pauseButton3MB");
   const audioGraphNoPlay3 = document.getElementById("audioGraphNoPlay3");
   const audioGraphPlay3 = document.getElementById("playAnimation3");
 
   const playButton4 = document.getElementById("playButton4");
   const pauseButton4 = document.getElementById("pauseButton4");
+  const playButton4MB = document.getElementById("playButton4MB");
+  const pauseButton4MB = document.getElementById("pauseButton4MB");
   const audioGraphNoPlay4 = document.getElementById("audioGraphNoPlay4");
   const audioGraphPlay4 = document.getElementById("playAnimation4");
 
   const playButton5 = document.getElementById("playButton5");
   const pauseButton5 = document.getElementById("pauseButton5");
+  const playButton5MB = document.getElementById("playButton5MB");
+  const pauseButton5MB = document.getElementById("pauseButton5MB");
   const audioGraphNoPlay5 = document.getElementById("audioGraphNoPlay5");
   const audioGraphPlay5 = document.getElementById("playAnimation5");
 
@@ -138,22 +148,28 @@ $(document).ready(function () {
     onplay: function () {
       playing1 = true;
       playButton.classList.add("invisible");
+      playButtonMB.classList.add("invisible");
       audioGraphNoPlay.classList.add("invisible");
       pauseButton.classList.remove("invisible");
+      pauseButtonMB.classList.remove("invisible");
       audioGraphPlay.classList.remove("invisible");
     },
     onpause: function () {
       playing1 = false;
       pauseButton.classList.add("invisible");
+      pauseButtonMB.classList.add("invisible");
       audioGraphPlay.classList.add("invisible");
       playButton.classList.remove("invisible");
+      playButtonMB.classList.remove("invisible");
       audioGraphNoPlay.classList.remove("invisible");
     },
     onend: function () {
       playing1 = false;
       pauseButton.classList.add("invisible");
+      pauseButtonMB.classList.add("invisible");
       audioGraphPlay.classList.add("invisible");
       playButton.classList.remove("invisible");
+      playButtonMB.classList.remove("invisible");
       audioGraphNoPlay.classList.remove("invisible");
     }
   });
@@ -164,8 +180,10 @@ $(document).ready(function () {
     sound1.stop();
     playing1 = false;
     pauseButton.classList.add("invisible");
+    pauseButtonMB.classList.add("invisible");
     audioGraphPlay.classList.add("invisible");
     playButton.classList.remove("invisible");
+    playButtonMB.classList.remove("invisible");
     audioGraphNoPlay.classList.remove("invisible");
   };
 
@@ -175,22 +193,30 @@ $(document).ready(function () {
     onplay: function () {
       playing2 = true;
       playButton2.classList.add("invisible");
-      audioGraphNoPlay2.classList.add("invisible");
       pauseButton2.classList.remove("invisible");
+      playButton2MB.classList.add("invisible");
+      pauseButton2MB.classList.remove("invisible");
+      audioGraphNoPlay2.classList.add("invisible");
+
       audioGraphPlay2.classList.remove("invisible");
     },
     onpause: function () {
       playing2 = false;
       pauseButton2.classList.add("invisible");
-      audioGraphPlay2.classList.add("invisible");
       playButton2.classList.remove("invisible");
+      pauseButton2MB.classList.add("invisible");
+      playButton2MB.classList.remove("invisible");
+      audioGraphPlay2.classList.add("invisible");
       audioGraphNoPlay2.classList.remove("invisible");
     },
     onend: function () {
       playing2 = false;
       pauseButton2.classList.add("invisible");
-      audioGraphPlay2.classList.add("invisible");
       playButton2.classList.remove("invisible");
+      pauseButton2MB.classList.add("invisible");
+      playButton2MB.classList.remove("invisible");
+      audioGraphPlay2.classList.add("invisible");
+
       audioGraphNoPlay2.classList.remove("invisible");
     }
   });
@@ -201,8 +227,11 @@ $(document).ready(function () {
     sound2.stop();
     playing2 = false;
     pauseButton2.classList.add("invisible");
-    audioGraphPlay2.classList.add("invisible");
     playButton2.classList.remove("invisible");
+    pauseButton2MB.classList.add("invisible");
+    playButton2MB.classList.remove("invisible");
+    audioGraphPlay2.classList.add("invisible");
+
     audioGraphNoPlay2.classList.remove("invisible");
   };
 
@@ -212,22 +241,30 @@ $(document).ready(function () {
     onplay: function () {
       playing3 = true;
       playButton3.classList.add("invisible");
-      audioGraphNoPlay3.classList.add("invisible");
       pauseButton3.classList.remove("invisible");
+      playButton3MB.classList.add("invisible");
+      pauseButton3MB.classList.remove("invisible");
+      audioGraphNoPlay3.classList.add("invisible");
       audioGraphPlay3.classList.remove("invisible");
     },
     onpause: function () {
       playing3 = false;
       pauseButton3.classList.add("invisible");
-      audioGraphPlay3.classList.add("invisible");
       playButton3.classList.remove("invisible");
+      pauseButton3MB.classList.add("invisible");
+      playButton3MB.classList.remove("invisible");
+      audioGraphPlay3.classList.add("invisible");
+      
       audioGraphNoPlay3.classList.remove("invisible");
     },
     onend: function () {
       playing3 = false;
       pauseButton3.classList.add("invisible");
-      audioGraphPlay3.classList.add("invisible");
       playButton3.classList.remove("invisible");
+      pauseButton3MB.classList.add("invisible");
+      playButton3MB.classList.remove("invisible");
+      audioGraphPlay3.classList.add("invisible");
+      
       audioGraphNoPlay3.classList.remove("invisible");
     }
   });
@@ -238,8 +275,11 @@ $(document).ready(function () {
     sound3.stop();
     playing3 = false;
     pauseButton3.classList.add("invisible");
-    audioGraphPlay3.classList.add("invisible");
     playButton3.classList.remove("invisible");
+    pauseButton3MB.classList.add("invisible");
+    playButton3MB.classList.remove("invisible");
+    audioGraphPlay3.classList.add("invisible");
+   
     audioGraphNoPlay3.classList.remove("invisible");
   };
 
@@ -249,22 +289,31 @@ $(document).ready(function () {
     onplay: function () {
       playing4 = true;
       playButton4.classList.add("invisible");
-      audioGraphNoPlay4.classList.add("invisible");
       pauseButton4.classList.remove("invisible");
+      playButton4MB.classList.add("invisible");
+      pauseButton4MB.classList.remove("invisible");
+      audioGraphNoPlay4.classList.add("invisible");
+      
       audioGraphPlay4.classList.remove("invisible");
     },
     onpause: function () {
       playing4 = false;
       pauseButton4.classList.add("invisible");
-      audioGraphPlay4.classList.add("invisible");
       playButton4.classList.remove("invisible");
+      pauseButton4MB.classList.add("invisible");
+      playButton4MB.classList.remove("invisible");
+      audioGraphPlay4.classList.add("invisible");
+
       audioGraphNoPlay4.classList.remove("invisible");
     },
     onend: function () {
       playing4 = false;
       pauseButton4.classList.add("invisible");
-      audioGraphPlay4.classList.add("invisible");
       playButton4.classList.remove("invisible");
+      pauseButton4MB.classList.add("invisible");
+      playButton4MB.classList.remove("invisible");
+      audioGraphPlay4.classList.add("invisible");
+
       audioGraphNoPlay4.classList.remove("invisible");
     }
   });
@@ -275,8 +324,11 @@ $(document).ready(function () {
     sound4.stop();
     playing4 = false;
     pauseButton4.classList.add("invisible");
-    audioGraphPlay4.classList.add("invisible");
     playButton4.classList.remove("invisible");
+    pauseButton4MB.classList.add("invisible");
+    playButton4MB.classList.remove("invisible");
+    audioGraphPlay4.classList.add("invisible");
+
     audioGraphNoPlay4.classList.remove("invisible");
   };
 
@@ -286,22 +338,31 @@ $(document).ready(function () {
     onplay: function () {
       playing5 = true;
       playButton5.classList.add("invisible");
-      audioGraphNoPlay5.classList.add("invisible");
       pauseButton5.classList.remove("invisible");
+      playButton5MB.classList.add("invisible");
+      pauseButton5MB.classList.remove("invisible");
+      audioGraphNoPlay5.classList.add("invisible");
+      
       audioGraphPlay5.classList.remove("invisible");
     },
     onpause: function () {
       playing5 = false;
       pauseButton5.classList.add("invisible");
-      audioGraphPlay5.classList.add("invisible");
       playButton5.classList.remove("invisible");
+      pauseButton5MB.classList.add("invisible");
+      playButton5MB.classList.remove("invisible");
+      audioGraphPlay5.classList.add("invisible");
+      
       audioGraphNoPlay5.classList.remove("invisible");
     },
     onend: function () {
       playing5 = false;
       pauseButton5.classList.add("invisible");
-      audioGraphPlay5.classList.add("invisible");
       playButton5.classList.remove("invisible");
+      pauseButton5MB.classList.add("invisible");
+      playButton5MB.classList.remove("invisible");
+      audioGraphPlay5.classList.add("invisible");
+     
       audioGraphNoPlay5.classList.remove("invisible");
     }
   });
@@ -312,8 +373,11 @@ $(document).ready(function () {
     sound5.stop();
     playing5 = false;
     pauseButton5.classList.add("invisible");
-    audioGraphPlay5.classList.add("invisible");
     playButton5.classList.remove("invisible");
+    pauseButton5MB.classList.add("invisible");
+    playButton5MB.classList.remove("invisible");
+    audioGraphPlay5.classList.add("invisible");
+
     audioGraphNoPlay5.classList.remove("invisible");
   };
 
