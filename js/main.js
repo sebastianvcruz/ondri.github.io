@@ -384,7 +384,7 @@ $(document).ready(function () {
   // const animateList = document.querySelectorAll("#project01 ");
   const options = {
     rootMargin: "0px",
-    threshold: 0.1
+    threshold: 0.5
   };
   observer = new IntersectionObserver((elms) => {
     // let startLoad = true;
