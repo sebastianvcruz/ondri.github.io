@@ -946,9 +946,6 @@ a:active {
    Media Queries
    ========================================================================== */
 @media screen and (max-height: 570px) and (orientation: portrait) {
-  .mbhide{
-    display: none;
-  }
   .h-30 {
     height: 20% !important;
   }
@@ -1276,6 +1273,9 @@ a:active {
 }
 
 @media only screen and (max-height: 570px) and (orientation: landscape) {
+  .mbhide{
+    display: none;
+  }
   .data-A {
     width: 65px;
     margin-top: 3em;
@@ -1462,4 +1462,37 @@ a:active {
     top: 80%;
     z-index: 3;
   }
+}
+
+@media only screen and (max-height: 415px) and (orientation: landscape) {
+  .data-B {
+    height: 90px;
+}
+h3{
+  font-size: 22px;
+}
+p{
+  font-size: 12px;
+}
+.textColumn {
+  z-index: 6;
+  padding-top: 5vh;
+}
+.pl-5, .px-5 {
+  padding-left: 2rem!important;
+  padding-right: 2rem!important;
+}
+#fText2{
+  margin-bottom: 0;
+}
+#fText{
+  margin-bottom: 0 !important;
+}
+.data-A {
+  width: 55px;
+  margin-top: 35px;
+}
+.mobileP{
+  margin-bottom: 55px;
+}
 }
