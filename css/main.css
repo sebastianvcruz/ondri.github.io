@@ -1468,6 +1468,14 @@ a:active {
   .data-B {
     height: 90px;
 }
+.data-D {
+  height: 88px;
+  margin-top: 24px;
+}
+.data-C {
+  height: 86px;
+  margin-top: 12px;
+}
 h3{
   font-size: 22px;
 }
@@ -1494,5 +1502,12 @@ p{
 }
 .mobileP{
   margin-bottom: 55px;
+}
+.nextSectionButton{
+  margin-top: -9px;
+  
+}
+.arrow{
+  margin-top: 0 !important;
 }
 }
